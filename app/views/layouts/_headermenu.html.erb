@@ -1,0 +1,93 @@
+	<!-- Header -->
+
+	<nav class="navbar navbar-inverse cbp-af-header">
+
+		<div class="navbar-header-top">
+
+			<div class="container">
+
+				<div class="phone"><a href="tel: +1 226-666-1140"><i class="icofont-telephone"></i>+1 226-666-1140</a>
+
+				</div>
+
+				<div class="email"><a href="mailto: sales@railshouse.com"><i class="icofont-envelope-open"></i>sales@railshouse.com</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="container">
+
+			<div class="navbar-header">	<a id="menu-toggle" href="#" class="btn btn-transparent btn-lg toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+
+				<a href="index.html" class="navbar-brand wow rollIn">
+
+					<%= image_pack_tag "logo.png", alt: "Railshouse Logo" %>
+
+				</a>
+
+			</div>
+
+			<div class="sidear-btn">
+
+				<div class="left_menu_main" id="sidebar-wrapper">
+
+					<div class="mymenu">
+
+						<a id="click_here"></a>
+
+						<div id="drop_menu" class="menu4">
+
+							<ul id="panel">
+
+								<li class="active full-menu"><%= link_to "Home", root_path %>
+
+								</li>
+
+								<li><%= link_to('Company', company_index_path) %>
+
+									<ul>
+
+										<li><%= link_to('Our Team', company_team_path) %></li>
+
+									</ul>
+
+								</li>
+
+								<li><%= link_to('Services', services_index_path) %>
+
+								</li>
+
+								<li><%= link_to('Portfolio', portfolio_index_path) %>
+
+								</li>
+
+								<li><%= link_to('Articles', articles_index_path) %>
+
+								</li>
+
+								<li><%= link_to('Contact Us', contact_index_path) %>
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="request-form"><a href="#" class="red-btn hvr-radial-in">request free quote</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<!-- Header END -->

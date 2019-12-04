@@ -1,0 +1,249 @@
+.menu{right: 40px; position: absolute; top: 10px; font-size: 16px; text-transform: uppercase; font-weight: normal;}
+
+.menu a{color: #000;}
+
+.menu a:hover{color: #000;}
+
+
+
+.left_menu_main {height: 100%; position: relative; transition: all 0.4s ease 0s; z-index: 1000; float: right; margin: 0px 0}
+
+#sidebar-wrapper.active {right: 270px; transition: all 0.4s ease 0s; width: 270px;}
+
+#click_here_back {display: none;}
+
+#click_here, #click_here_back, #trigger {display: none;} 
+
+#drop_menu ul{margin: 0; padding: 0; list-style: none; text-align: right}
+
+#drop_menu ul li{text-align: right; line-height: 36px; display: inline-block;}
+
+#drop_menu ul li a{color: #000; text-align: left; font-size: 14px; font-weight: normal;}
+
+#drop_menu ul li a:hover{color: #cc0000}
+
+
+
+#drop_menu ul li.full-menu{position: inherit}
+
+#drop_menu ul li.full-menu ul{width: 100%; display: inline-block; top: auto; }
+
+#drop_menu ul li.full-menu ul li{width: 100%;}
+
+#drop_menu ul li.full-menu ul li .row{margin: 0; padding: 10px 0}
+
+#drop_menu ul li.full-menu ul li .col-md-6{border-right: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li .col-md-6:last-child{border-right: none;}
+
+#drop_menu ul li.full-menu ul li ul{position: relative; top: auto; height: auto; visibility: visible; border: none; left: auto !important; width: 100% !important; padding: 0 !important;}
+
+#drop_menu ul li.full-menu ul li ul li{text-align: left; display: block; line-height: 40px;}
+
+#drop_menu ul li.full-menu ul li ul li h3{margin: 0 0 10px; font-size: 18px; text-transform: none;}
+
+#drop_menu ul li.full-menu ul li ul li a{border: none; width: 100%; padding: 0 10px; line-height: 40px; background: none; color: #000 !important; text-transform: none; border-bottom: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li ul li:last-child a{border-bottom: 0;}
+
+#drop_menu ul li.full-menu ul li ul li a:hover{color: #cc0000 !important; background: #f1f1f1 !important}
+
+
+
+#navbar .right{display: none;}
+
+        
+
+@media screen and (max-width: 400px) {
+
+	.morph-button-fixed,
+
+	.morph-button-fixed .morph-content {width: 200px; height: 80px;}
+
+	.morph-button-fixed > button {font-size: 75%;}
+
+	.morph-button-sidebar > button {font-size: 1.6em;}
+
+	.morph-button-inflow .morph-content .morph-clone {font-size: 0.9em;}
+
+	.morph-button-modal-4,
+
+	.morph-button-modal-4 .morph-content {width: 220px; height: 120px;}
+
+	.morph-button-modal-4 > button {font-size: 100%; line-height: 50px;}
+
+	.morph-button-modal-4 > button span {display: block;}
+
+	.morph-button-modal-4 .morph-clone {right: 83px; bottom: 26px;}
+
+	.morph-button-sidebar,
+
+	.morph-button-sidebar .morph-content {width: 100% !important; height: 60px !important;}
+
+	.morph-button-sidebar {bottom: 0px; left: 0px;}
+
+	.morph-button-sidebar.open .morph-content {height: 100% !important;}
+
+}
+
+
+
+@media screen and (max-width: 770px) {
+
+	.mockup-left {float: none; margin: 0 auto 20px;}
+
+	.mockup-right {}
+
+	.joiner {display: block;}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.mockup-content > span:nth-last-child(2) {width: calc(100% - 210px);}
+
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {display: none;}
+
+}
+
+
+
+
+
+@media only screen and (min-width:1200px) and (max-width:1399px) {
+
+
+
+}
+
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+#drop_menu ul li a{font-size: 14px;}
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.left_menu_main {background: #000; height: 100%; margin-right: -270px; overflow-y: auto; position: fixed; right: 0; top: 0; transition: all 0.4s ease 0s; z-index: 1000; margin-top: 0}
+
+#click_here, #click_here_back, #trigger {background: rgba(0, 0, 0, 0) url("../images/close2.png") no-repeat scroll right 20px center; color: #fefefe; cursor: pointer; width: 269px; display: block; position: relative; height: 70px;} 
+
+
+
+#drop_menu ul li{text-align: left; padding: 0 20px; border-bottom: 1px solid #666666; line-height: 48px; display: block; transition: all .2s ease-in-out;}
+
+#drop_menu ul li:hover{background: #980011}
+
+#drop_menu ul li a{padding: 0; color: #FFFFFF;}
+
+#drop_menu ul li a:hover{color: #FFFFFF;}
+
+
+
+#drop_menu ul li.full-menu ul li .row{padding: 0}
+
+#drop_menu ul li.full-menu ul li .col-md-6{padding: 0; border-right: none;}
+
+#drop_menu ul li.full-menu ul li ul li:last-child a{border-bottom: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li ul li a{color: #FFFFFF !important}
+
+}
+
+
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+
+.left_menu_main {background: #000; height: 100%; margin-right: -270px; overflow-y: auto; position: fixed; right: 0; top: 0; transition: all 0.4s ease 0s; z-index: 1000; margin-top: 0}
+
+#click_here, #click_here_back, #trigger {background: rgba(0, 0, 0, 0) url("../images/close2.png") no-repeat scroll right 20px center; color: #fefefe; cursor: pointer; width: 269px; display: block; position: relative; height: 70px;} 
+
+
+
+#drop_menu ul li{text-align: left; padding: 0 20px; border-bottom: 1px solid #666666; line-height: 48px; display: block; transition: all .2s ease-in-out;}
+
+#drop_menu ul li:hover{background: #980011}
+
+#drop_menu ul li a{padding: 0; color: #FFFFFF;}
+
+#drop_menu ul li a:hover{color: #FFFFFF;}
+
+
+
+#drop_menu ul li.full-menu ul li .row{padding: 0}
+
+#drop_menu ul li.full-menu ul li .col-md-6{padding: 0; border-right: none;}
+
+#drop_menu ul li.full-menu ul li ul li:last-child a{border-bottom: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li ul li a{color: #FFFFFF !important}
+
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+
+.left_menu_main {background: #000; height: 100%; margin-right: -270px; overflow-y: auto; position: fixed; right: 0; top: 0; transition: all 0.4s ease 0s; z-index: 1000; margin-top: 0}
+
+#click_here, #click_here_back, #trigger {background: rgba(0, 0, 0, 0) url("../images/close2.png") no-repeat scroll right 20px center; color: #fefefe; cursor: pointer; width: 269px; display: block; position: relative; height: 70px;} 
+
+
+
+#drop_menu ul li{text-align: left; padding: 0 20px; border-bottom: 1px solid #666666; line-height: 48px; display: block; transition: all .2s ease-in-out;}
+
+#drop_menu ul li:hover{background: #980011}
+
+#drop_menu ul li a{padding: 0; color: #FFFFFF;}
+
+#drop_menu ul li a:hover{color: #FFFFFF;}
+
+
+
+#drop_menu ul li.full-menu ul li .row{padding: 0}
+
+#drop_menu ul li.full-menu ul li .col-md-6{padding: 0; border-right: none;}
+
+#drop_menu ul li.full-menu ul li ul li:last-child a{border-bottom: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li ul li a{color: #FFFFFF !important}
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+.left_menu_main {background: #000; height: 100%; margin-right: -270px; overflow-y: auto; position: fixed; right: 0; top: 0; transition: all 0.4s ease 0s; z-index: 1000; margin-top: 0}
+
+#click_here, #click_here_back, #trigger {background: rgba(0, 0, 0, 0) url("../images/close2.png") no-repeat scroll right 20px center; color: #fefefe; cursor: pointer; width: 269px; display: block; position: relative; height: 70px;} 
+
+
+
+#drop_menu ul li{text-align: left; padding: 0 20px; border-bottom: 1px solid #666666; line-height: 48px; display: block; transition: all .2s ease-in-out;}
+
+#drop_menu ul li:hover{background: #980011}
+
+#drop_menu ul li a{padding: 0; color: #FFFFFF;}
+
+#drop_menu ul li a:hover{color: #FFFFFF;}
+
+
+
+#drop_menu ul li.full-menu ul li .row{padding: 0}
+
+#drop_menu ul li.full-menu ul li .col-md-6{padding: 0; border-right: none;}
+
+#drop_menu ul li.full-menu ul li ul li:last-child a{border-bottom: 1px solid #CCCCCC;}
+
+#drop_menu ul li.full-menu ul li ul li a{color: #FFFFFF !important}
+
+}

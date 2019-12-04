@@ -1,0 +1,240 @@
+		<!-- Bootstrap core JavaScript
+
+================================================== -->
+
+		<!-- Placed at the end of the document so the pages load faster -->
+
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+		<%= javascript_pack_tag "bootstrapmin" %>
+		<%= javascript_pack_tag "index" %>
+		<%= javascript_pack_tag "scripts" %>
+
+	    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+		<%= javascript_pack_tag "owlcarouselmin" %>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+		<script>
+
+			new WOW().init();
+
+		</script>
+
+		<!-- client logo -->
+
+		<script>
+
+			/* On BxSlider desktop Code */
+
+			var windowsize = $(window).width();
+
+			var containerSize = $('.container').width();
+
+			var maxSlides = 5;
+
+			var slideWidth = containerSize/3;
+
+			if (windowsize >= 768)	{
+
+				maxSlides = 4;
+
+				slideWidth = containerSize/4;
+
+			}else if(windowsize < 768  || windowsize > 480){
+
+				maxSlides = 2;
+
+				slideWidth = containerSize/2;
+
+			}else if(windowsize <= 480){
+
+				maxSlides = 1;
+
+				slideWidth = containerSize;
+
+			}
+
+			var BXSlder = $('.bxslider').bxSlider({
+
+				pager: true,
+
+				nextText: '',
+
+				prevText: '',
+
+				minSlides: 1,
+
+				maxSlides: maxSlides,
+
+				slideWidth:slideWidth,
+
+				moveSlides: 1
+
+			});
+
+		
+
+			/* On BxSlider resize Code */
+
+			$( window ).resize(function() {
+
+				var windowsize = $(window).width();
+
+				var containerSize = $('.container').width();
+
+				var maxSlides = 5;
+
+				var slideWidth = containerSize/5;
+
+				if (windowsize >= 768)	{
+
+					maxSlides = 4;
+
+					slideWidth = containerSize/4;
+
+				}else if(windowsize < 768  || windowsize > 480){
+
+					maxSlides = 2;
+
+					slideWidth = containerSize/2;
+
+				}else if(windowsize <= 480){
+
+					maxSlides = 1;
+
+					slideWidth = containerSize;
+
+				}
+
+				var BXSlder = $('.bxslider').bxSlider({
+
+					pager: true,
+
+					nextText: '',
+
+					prevText: '',
+
+					minSlides: 1,
+
+					maxSlides: maxSlides,
+
+					slideWidth:slideWidth,
+
+					moveSlides: 1
+
+				});
+
+			});
+
+		</script>
+
+		<!-- portfolio -->
+
+		<script type="text/javascript">
+
+			/* On BxSlider desktop Code */
+
+			var windowsize = $(window).width();
+
+			var containerSize = $('.container').width();
+
+			var maxSlides = 1;
+
+			var slideWidth = containerSize/1;
+
+			if (windowsize >= 768)	{
+
+				maxSlides = 1;
+
+				slideWidth = containerSize/1;
+
+			}else if(windowsize < 768  || windowsize >= 480){
+
+				maxSlides = 1;
+
+				slideWidth = containerSize/1;
+
+			}else if(windowsize > 480){
+
+				maxSlides = 1;
+
+				slideWidth = containerSize/1;
+
+			}
+
+			var BXSlder = $('.bxslider2').bxSlider({
+
+				pager: true,
+
+				nextText: '',
+
+				prevText: '',
+
+				minSlides: 1,
+
+				maxSlides: maxSlides,
+
+				slideWidth:slideWidth,
+
+				moveSlides: 1
+
+			});
+
+		
+
+			/* On BxSlider resize Code */
+
+			$( window ).resize(function() {
+
+				var windowsize = $(window).width();
+
+				var containerSize = $('.container').width();
+
+				var maxSlides = 1;
+
+				var slideWidth = containerSize/1;
+
+				if (windowsize >= 768)	{
+
+					maxSlides = 1;
+
+					slideWidth = containerSize/1;
+
+				}else if(windowsize < 768  || windowsize >= 480){
+
+					maxSlides = 1;
+
+					slideWidth = containerSize/1;
+
+				}else if(windowsize > 480){
+
+					maxSlides = 1;
+
+					slideWidth = containerSize/1;
+
+				}
+
+				var BXSlder = $('.bxslider2').bxSlider({
+
+					pager: true,
+
+					nextText: '',
+
+					prevText: '',
+
+					minSlides: 1,
+
+					maxSlides: maxSlides,
+
+					slideWidth:slideWidth,
+
+					moveSlides: 1
+
+				});
+
+			});
+
+		</script>
+
