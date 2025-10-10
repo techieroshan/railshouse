@@ -444,9 +444,9 @@ animation-timing-function: ease-in-out;-webkit-animation-iteration-count: 1;anim
 
 #clients h3{color: #000000;margin-bottom: 35px;}
 
-#clients .bx-wrapper .bx-prev {	left: -27px;	background: url('../images/left-arrow.png') no-repeat 0 0;}
+#clients .bx-wrapper .bx-prev {	left: -27px;	background: image-url("left-arrow.png") no-repeat 0 0;}
 
-#clients .bx-wrapper .bx-next {	right: -31px;	background: url('../images/right-arrow.png') no-repeat 0 0;}
+#clients .bx-wrapper .bx-next {	right: -31px;	background: image-url("right-arrow.png") no-repeat 0 0;}
 
 
 
