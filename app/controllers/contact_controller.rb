@@ -13,4 +13,19 @@ class ContactController < ApplicationController
       }
     )
   end
+  
+  def quote
+    set_meta_tags(
+      title: 'Request a Free Quote - Ruby on Rails Consulting | Dallas-Fort Worth, Texas',
+      description: 'Request a free consultation and quote for your Ruby on Rails project. Our expert team in Dallas-Fort Worth provides tailored solutions for enterprise applications, migrations, and custom development.',
+      keywords: 'Rails consulting quote Dallas, free Rails consultation Fort Worth, DFW Rails project estimate, Texas Rails consulting quote, enterprise Rails quote',
+      og: {
+        title: 'Request Free Quote - RailsHouse Rails Consulting',
+        description: 'Get a personalized quote for your Ruby on Rails project from our expert consultants in Dallas-Fort Worth, Texas.',
+        type: 'website',
+        url: request.original_url,
+        image: "#{request.base_url}/icon.png"
+      }
+    )
+  end
 end

@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   get 'contact/index'
+  get 'contact/quote', to: 'contact#quote', as: 'request_quote'
   root 'home#index'
 
    get 'company/index'
@@ -13,6 +14,13 @@ Rails.application.routes.draw do
    get 'services/maintenance', to: 'services#maintenance', as: 'services_maintenance'
    get 'services/staffing', to: 'services#staffing', as: 'services_staffing'
    get 'services/development', to: 'services#development', as: 'services_development'
+   get 'services/testing', to: 'services#testing', as: 'services_testing'
+   get 'services/seo', to: 'services#seo', as: 'services_seo'
+   get 'services/refactoring', to: 'services#refactoring', as: 'services_refactoring'
+   get 'services/frontend', to: 'services#frontend', as: 'services_frontend'
+   get 'services/performance', to: 'services#performance', as: 'services_performance'
+   get 'services/training', to: 'services#training', as: 'services_training'
+   get 'services/advisory', to: 'services#advisory', as: 'services_advisory'
    
    resources :portfolio, only: [:index, :show]
    

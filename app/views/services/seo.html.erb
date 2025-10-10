@@ -1,0 +1,136 @@
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban service">
+	<div class="container">
+		<div class="ban-text">
+			<div class="updates">Search Engine Optimization</div>
+			<h1>Ruby on Rails SEO Services</h1>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="service-wrap">
+	<section class="breadcrumb-wrap">
+		<div class="container">
+			<div class="row">
+				<nav aria-label="breadcrumb" class="brd">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
+						<li class="breadcrumb-item"><%= link_to "Services", services_index_path %></li>
+						<li class="breadcrumb-item active" aria-current="page">SEO</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am first-sec">
+		<div class="container">
+			<div class="row">
+				<div class="main-heading wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+					<h1>Technical SEO for Ruby on Rails Applications</h1>
+				</div>
+				<p>Maximize your Rails application's search engine visibility with our comprehensive technical SEO services. We optimize performance, implement structured data, ensure mobile-friendliness, and leverage Rails-specific optimization techniques to improve your search rankings and drive organic traffic in Dallas, Fort Worth, and beyond.</p>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser1.png') %>" alt="Technical SEO">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Technical SEO Optimization</div>
+							<p>Optimize site speed, implement proper URL structures, canonical tags, XML sitemaps, and robots.txt for maximum search engine crawlability.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser2.png') %>" alt="Schema Markup">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Structured Data & Schema</div>
+							<p>Implement JSON-LD schema markup, rich snippets, and structured data to enhance search result appearances and improve click-through rates.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser3.png') %>" alt="Performance Optimization">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Core Web Vitals Optimization</div>
+							<p>Optimize LCP, FID, and CLS metrics for better user experience and improved Google rankings through performance tuning.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser4.png') %>" alt="AEO Optimization">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Answer Engine Optimization</div>
+							<p>Optimize for AI agents and answer engines to ensure your content is discoverable by ChatGPT, Claude, and other AI systems.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about-us-second" class="service row-am">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 left all">
+					<img src="<%= asset_path('about-img.png') %>" alt="Rails SEO Services">
+				</div>
+				<div class="col-md-6 right">
+					<div class="ser-title"><i class="icofont-search"></i>SEO Services We Provide</div>
+					<p>Our comprehensive SEO approach combines technical excellence with strategic content optimization to drive measurable results for your Rails applications.</p>
+					<ul>
+						<li>Technical SEO audits and implementation</li>
+						<li>Page speed optimization and caching strategies</li>
+						<li>Mobile-first responsive design optimization</li>
+						<li>Schema markup and structured data implementation</li>
+						<li>Meta tags, Open Graph, and Twitter Cards optimization</li>
+						<li>XML sitemap generation and submission</li>
+						<li>Canonical URL implementation</li>
+						<li>Local SEO for Dallas-Fort Worth targeting</li>
+						<li>Answer Engine Optimization (AEO) for AI discovery</li>
+						<li>International SEO and hreflang implementation</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am service-new">
+		<div class="container ser-new-inner">
+			<div class="row">
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-rocket"></i>Performance Optimization</div>
+					<p>Optimize Rails asset pipeline, implement CDN strategies, enable compression, and fine-tune database queries to achieve superior Core Web Vitals scores and faster page load times.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-code"></i>On-Page SEO Excellence</div>
+					<p>Strategic keyword optimization, content structure improvements, header tag optimization, internal linking strategies, and semantic HTML implementation for better search visibility.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-robot"></i>AI & AEO Optimization</div>
+					<p>Prepare your content for the AI-driven future with Answer Engine Optimization. Structure data for AI agents, implement natural language patterns, and ensure discoverability by ChatGPT and other AI systems.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<%= render(:partial => 'layouts/sec8interestedblock') %>
+</div>
+
+<%= render(:partial => 'layouts/footerjsblock') %>

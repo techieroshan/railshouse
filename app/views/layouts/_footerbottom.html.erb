@@ -62,11 +62,11 @@
 
 								</li>
 
-								<li><%= link_to 'Ruby on Rails Testing', services_index_path %>
+								<li><%= link_to 'Ruby on Rails Testing', services_testing_path %>
 
 								</li>
 
-								<li><%= link_to 'Ruby on Rails SEO', services_index_path %>
+								<li><%= link_to 'Ruby on Rails SEO', services_seo_path %>
 
 								</li>
 
@@ -86,23 +86,23 @@
 
 								</li>
 
-								<li><a href="#">Refactoring for Microservices</a>
+								<li><%= link_to 'Refactoring for Microservices', services_refactoring_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Front End JS Dev</a>
+								<li><%= link_to 'Ruby on Rails Front End JS Dev', services_frontend_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Performance Tuning</a>
+								<li><%= link_to 'Ruby on Rails Performance Tuning', services_performance_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Training</a>
+								<li><%= link_to 'Ruby on Rails Training', services_training_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Advisory Services</a>
+								<li><%= link_to 'Ruby on Rails Advisory Services', services_advisory_path %>
 
 								</li>
 
@@ -122,23 +122,21 @@
 
 										<%= image_tag "location.png", alt: "Railshouse Location" %>1320 Pepperhill Ln,
 
-										<br>Fort Worth, TX 76131</a>
+										<br>Fort Worth, TX 76131 USA</a>
 
 								</li>
 
 								<li class="callf">
 
-									<a href="tel:+12266661140">
+									<a href="tel:+18575672674">
 
-										<%= image_tag "call.png", alt: "Railshouse Phone" %>+1 226 666 1140</a>
+										<%= image_tag "call.png", alt: "Railshouse Phone" %>+1 857 567 2674</a>
 
 								</li>
 
 								<li class="email">
 
-									<a href="mailto:sales@railshouse.com">
-
-										<%= image_tag "email.png", alt: "Railshouse email" %>sales@railshouse.com</a>
+									<%= obfuscated_email('hello@railshouse.com', text: raw("#{image_tag('email.png', alt: 'Railshouse email')}hello@railshouse.com")) %>
 
 								</li>
 
@@ -158,7 +156,7 @@
 
 					<div class="row">
 
-						<div class="left col-md-4">© 2009-2019. RailsHouse. All Rights Reserved</div>
+						<div class="left col-md-4">© 2009-<%= current_year %>. RailsHouse. All Rights Reserved</div>
 
 						<div class="center col-md-4 wow fadeInRight animated animated">
 
@@ -188,7 +186,7 @@
 
 						</div>
 
-						<div class="right col-md-4">Developed by <a href="https://www.railshouse.com/">RailsHouse, division of Cogdina Inc</a>
+						<div class="right col-md-4">Developed by <a href="https://www.railshouse.com/">RailsHouse</a>, division of <a href="https://kosansh.com" target="_blank" rel="noopener">Kosansh Solutions Inc</a>
 
 						</div>
 

@@ -1,0 +1,134 @@
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban service">
+	<div class="container">
+		<div class="ban-text">
+			<div class="updates">Quality Assurance Excellence</div>
+			<h1>Ruby on Rails Testing Services</h1>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="service-wrap">
+	<section class="breadcrumb-wrap">
+		<div class="container">
+			<div class="row">
+				<nav aria-label="breadcrumb" class="brd">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
+						<li class="breadcrumb-item"><%= link_to "Services", services_index_path %></li>
+						<li class="breadcrumb-item active" aria-current="page">Testing</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am first-sec">
+		<div class="container">
+			<div class="row">
+				<div class="main-heading wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+					<h1>Comprehensive Rails Testing & QA Services</h1>
+				</div>
+				<p>Ensure the reliability, security, and performance of your Ruby on Rails applications with our comprehensive testing and quality assurance services. Our expert QA engineers implement industry-leading testing strategies that catch issues before they reach production, reducing risk and ensuring exceptional user experiences.</p>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser1.png') %>" alt="Rails Testing">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Unit & Integration Testing</div>
+							<p>Comprehensive test coverage using RSpec, Minitest, and automated testing frameworks to ensure code quality and reliability.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser2.png') %>" alt="Performance Testing">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Performance & Load Testing</div>
+							<p>Validate application performance under load, identify bottlenecks, and ensure scalability for your growing user base.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser3.png') %>" alt="Security Testing">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Security & Penetration Testing</div>
+							<p>Identify vulnerabilities, ensure OWASP compliance, and protect your application from security threats and exploits.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser4.png') %>" alt="Test Automation">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Automated Testing & CI/CD</div>
+							<p>Build robust test automation pipelines with continuous integration and deployment for faster, safer releases.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about-us-second" class="service row-am">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 left all">
+					<img src="<%= asset_path('about-img.png') %>" alt="Rails Testing Services">
+				</div>
+				<div class="col-md-6 right">
+					<div class="ser-title"><i class="icofont-check-circled"></i>Our Testing Approach</div>
+					<p>Our comprehensive testing methodology ensures your Rails applications meet the highest quality standards. We combine automated and manual testing strategies to provide complete coverage and confidence in your deployments.</p>
+					<ul>
+						<li>Test-Driven Development (TDD) implementation</li>
+						<li>Behavior-Driven Development (BDD) with Cucumber</li>
+						<li>Continuous integration and automated test suites</li>
+						<li>Cross-browser and device compatibility testing</li>
+						<li>API testing and validation</li>
+						<li>Database integrity and migration testing</li>
+						<li>Accessibility testing (WCAG 2.2 AA compliance)</li>
+						<li>Performance benchmarking and optimization</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am service-new">
+		<div class="container ser-new-inner">
+			<div class="row">
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-ui-check"></i>Unit Testing Excellence</div>
+					<p>Comprehensive unit test coverage using RSpec and Minitest, ensuring individual components function correctly in isolation. Our testing strategies include model testing, controller testing, helper testing, and comprehensive edge case coverage.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-ui-check"></i>Integration Testing</div>
+					<p>End-to-end integration testing to validate complete user workflows, API integrations, and system interactions. We ensure all components work seamlessly together in production-like environments.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-ui-check"></i>System & Acceptance Testing</div>
+					<p>Complete system testing and user acceptance testing (UAT) to validate business requirements and ensure your application meets stakeholder expectations and regulatory requirements.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<%= render(:partial => 'layouts/sec8interestedblock') %>
+</div>
+
+<%= render(:partial => 'layouts/footerjsblock') %>
