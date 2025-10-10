@@ -1,0 +1,154 @@
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban portfolio">
+  <div class="container">
+    <div class="ban-text">
+      <div class="updates"><%= @portfolio.industry %></div>
+      <h1><%= @portfolio.title %></h1>
+    </div>
+  </div>
+</div>
+
+<!-- Content -->
+<div id="content" class="about-us-wrap white-bg">
+  <section class="breadcrumb-wrap">
+    <div class="container">
+      <div class="row">
+        <nav aria-label="breadcrumb" class="brd">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+            <li class="breadcrumb-item"><%= link_to 'Portfolio', portfolio_index_path %></li>
+            <li class="breadcrumb-item active" aria-current="page"><%= truncate(@portfolio.title, length: 50) %></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Study Content -->
+  <section class="row-am case-study-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="case-study-header mb-5">
+            <h2 class="mb-4"><%= @portfolio.title %></h2>
+            <div class="row case-study-meta">
+              <div class="col-md-4">
+                <h5>Client</h5>
+                <p><strong><%= @portfolio.client %></strong></p>
+              </div>
+              <div class="col-md-4">
+                <h5>Industry</h5>
+                <p><strong><%= @portfolio.industry %></strong></p>
+              </div>
+              <div class="col-md-4">
+                <h5>Published</h5>
+                <p><strong><%= @portfolio.published_at&.strftime('%B %Y') %></strong></p>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <h5>Project Description</h5>
+                <p class="lead"><%= @portfolio.description %></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Challenge Section -->
+          <div class="case-study-section mb-5">
+            <%= raw @portfolio.challenge %>
+          </div>
+
+          <!-- Solution Section -->
+          <div class="case-study-section mb-5">
+            <%= raw @portfolio.solution %>
+          </div>
+
+          <!-- Results Section -->
+          <div class="case-study-section mb-5">
+            <%= raw @portfolio.results %>
+          </div>
+
+          <!-- Technologies Section -->
+          <div class="case-study-section mb-5">
+            <h3>Technologies Used</h3>
+            <p class="technologies-list"><%= @portfolio.technologies %></p>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="case-study-cta text-center mt-5 mb-5 p-5" style="background: #f8f9fa; border-radius: 8px;">
+            <h3>Ready to Transform Your Business?</h3>
+            <p class="lead">Let RailsHouse build a custom solution tailored to your needs.</p>
+            <%= link_to 'Get in Touch', contact_index_path, class: 'red-btn hvr-radial-in', 
+                style: 'font-size: 18px; padding: 15px 40px;' %>
+          </div>
+
+          <!-- Back to Portfolio -->
+          <div class="text-center mb-5">
+            <%= link_to '← Back to Portfolio', portfolio_index_path, class: 'btn btn-outline-secondary' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .case-study-content {
+    padding: 60px 0;
+  }
+  .case-study-header h2 {
+    color: #333;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .case-study-meta h5 {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .case-study-section h3 {
+    color: #e74c3c;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 10px;
+  }
+  .case-study-section h4 {
+    color: #333;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .case-study-section ul {
+    margin-left: 20px;
+  }
+  .case-study-section ul li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+  }
+  .case-study-section p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  .case-study-section strong {
+    color: #333;
+    font-weight: 600;
+  }
+  .technologies-list {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+  }
+  .case-study-cta {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .case-study-cta h3 {
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+</style>
+
+<%= render(:partial => 'layouts/footerjsblock') %>

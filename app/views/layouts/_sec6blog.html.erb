@@ -13,36 +13,36 @@
 				</div>
 
 				<div class="three-blog row">
-
+					<% Article.published.limit(3).each do |article| %>
 					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
 
 						<div class="blog-single-inner">
 
 							<div class="blog-img">
 
-								<%= image_tag "blog1.png", alt: "Rails Blog" %>
+								<%= image_tag "blog#{rand(1..4)}.png", alt: article.title %>
 
 							</div>
 
 							<div class="blog-cont-wrapper">
 
-								<div class="date">15
+								<div class="date"><%= article.published_at.day %>
 
-									<br><span class="month font-uppercase">may</span>
+									<br><span class="month font-uppercase"><%= article.published_at.strftime('%b') %></span>
 
 								</div>
 
-								<div class="blog-name ">Scaling Rails Applications: Best Practices for High-Traffic Systems</div>
+								<div class="blog-name"><%= link_to article.title, article_path(article) %></div>
 
-								<p>Discover proven strategies for scaling Ruby on Rails applications to handle millions of requests. Learn about database optimization, caching layers, background job processing, and infrastructure design patterns that power successful high-traffic platforms.</p>
+								<p><%= truncate(strip_tags(article.content), length: 180) %></p>
 
 								<div class="blog-btn">
 
-									<a href="#">
+									<%= link_to article_path(article), aria: { label: "Read more about #{article.title}" } do %>
 
-										<%= image_tag "red-right.png", alt: "Rails Red right" %>
+										<%= image_tag "red-right.png", alt: "Read More" %>
 
-									</a>
+									<% end %>
 
 								</div>
 
@@ -51,82 +51,7 @@
 						</div>
 
 					</div>
-
-					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
-
-						<div class="blog-single-inner">
-
-							<div class="blog-img">
-
-								<%= image_tag "blog2.png", alt: "Rails blog 2" %>
-
-							</div>
-
-							<div class="blog-cont-wrapper">
-
-								<div class="date">15
-
-									<br><span class="month font-uppercase">may</span>
-
-								</div>
-
-								<div class="blog-name">Modern Rails Architecture: Microservices vs Monoliths</div>
-
-								<p>Explore the architectural decisions that shape successful Rails applications. Compare monolithic and microservices approaches, understand when to use each pattern, and learn how to build maintainable, scalable systems aligned with business goals.</p>
-
-								<div class="blog-btn">
-
-									<a href="#">
-
-										<%= image_tag "red-right.png", alt: "Rails Red Right" %>
-
-									</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
-
-						<div class="blog-single-inner">
-
-							<div class="blog-img">
-
-								<%= image_tag "blog3.png", alt: "Rails Blog 3" %>
-
-							</div>
-
-							<div class="blog-cont-wrapper">
-
-								<div class="date">15
-
-									<br><span class="month font-uppercase">may</span>
-
-								</div>
-
-								<div class="blog-name">Security Best Practices for Ruby on Rails Applications</div>
-
-								<p>Comprehensive guide to securing your Rails applications against modern threats. Cover authentication strategies, authorization patterns, input validation, SQL injection prevention, XSS protection, and implementing security headers for production environments.</p>
-
-								<div class="blog-btn">
-
-									<a href="#">
-
-										<%= image_tag "red-right.png", alt: "Rails red right" %>
-
-									</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
+					<% end %>
 
 				</div>
 

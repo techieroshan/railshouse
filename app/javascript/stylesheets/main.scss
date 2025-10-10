@@ -978,7 +978,11 @@ transform: rotate(-4deg);margin-top: -60px;margin-left: 40px;}
 
 .content .mCSB_container {		margin-right: 5px;}
 
-.content{ width:100%; height: 200px; overflow:auto; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+/* Updated: Remove fixed height and overflow for article detail pages */
+.content{ width:100%; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
+
+/* Keep scrollbar for sidebar widgets only */
+.side-bar .content{ width:100%; height: 200px; overflow:auto; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;}
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {	background: rgba(204, 0, 0, 1);}
 

@@ -1,5 +1,7 @@
 		<!-- Footer -->
 
+		<footer role="contentinfo">
+
 		<footer>
 
 			<div class="row footer1">
@@ -30,7 +32,7 @@
 
 								</li>
 
-								<li><%= link_to('Articles', articles_index_path) %>
+								<li><%= link_to('Articles', articles_path) %>
 
 								</li>
 
@@ -48,27 +50,27 @@
 
 							<ul>
 
-								<li><a href="#">Ruby on Rails Consulting</a>
+								<li><%= link_to 'Ruby on Rails Consulting', services_consulting_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Migration</a>
+								<li><%= link_to 'Ruby on Rails Migration', services_migration_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Upgrade</a>
+								<li><%= link_to 'Ruby on Rails Development', services_development_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Testing</a>
+								<li><%= link_to 'Ruby on Rails Testing', services_index_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails SEO</a>
+								<li><%= link_to 'Ruby on Rails SEO', services_index_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Maintenance</a>
+								<li><%= link_to 'Ruby on Rails Maintenance', services_maintenance_path %>
 
 								</li>
 
@@ -80,7 +82,7 @@
 
 							<ul>
 
-								<li><a href="#">Staff Augmentation</a>
+								<li><%= link_to 'Staff Augmentation', services_staffing_path %>
 
 								</li>
 
@@ -116,17 +118,17 @@
 
 								<li class="address">
 
-									<a href="#">
+									<a href="https://maps.google.com/?q=1320+Pepperhill+Ln,+Fort+Worth,+TX+76131" target="_blank" rel="noopener">
 
-										<%= image_tag "location.png", alt: "Railshouse Location" %>309-383, Albert St,
+										<%= image_tag "location.png", alt: "Railshouse Location" %>1320 Pepperhill Ln,
 
-										<br>Waterloo, ON, N2L 6E3, Canada</a>
+										<br>Fort Worth, TX 76131</a>
 
 								</li>
 
 								<li class="callf">
 
-									<a href="tel: +1 123 456 7890">
+									<a href="tel:+12266661140">
 
 										<%= image_tag "call.png", alt: "Railshouse Phone" %>+1 226 666 1140</a>
 
@@ -134,7 +136,7 @@
 
 								<li class="email">
 
-									<a href="mailto: sales@railshouse.com">
+									<a href="mailto:sales@railshouse.com">
 
 										<%= image_tag "email.png", alt: "Railshouse email" %>sales@railshouse.com</a>
 

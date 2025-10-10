@@ -1,6 +1,7 @@
 	<!-- Header -->
 
-	<nav class="navbar navbar-inverse cbp-af-header">
+	<header role="banner">
+	<nav class="navbar navbar-inverse cbp-af-header" role="navigation" aria-label="Main navigation">
 
 		<div class="navbar-header-top">
 
@@ -20,7 +21,7 @@
 
 		<div class="container">
 
-			<div class="navbar-header">	<a id="menu-toggle" href="#" class="btn btn-transparent btn-lg toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+			<div class="navbar-header">	<a id="menu-toggle" href="#" class="btn btn-transparent btn-lg toggle" aria-label="Toggle navigation menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
 
 				<a href="index.html" class="navbar-brand wow rollIn">
 
@@ -64,7 +65,7 @@
 
 								</li>
 
-								<li><%= link_to('Articles', articles_index_path) %>
+								<li><%= link_to('Articles', articles_path) %>
 
 								</li>
 
@@ -89,5 +90,6 @@
 		</div>
 
 	</nav>
+	</header>
 
 	<!-- Header END -->

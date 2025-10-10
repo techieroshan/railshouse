@@ -1,0 +1,228 @@
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban services">
+  <div class="container">
+    <div class="ban-text">
+      <div class="updates">Keep Your Rails App Running Smoothly</div>
+      <h1>Ruby on Rails Maintenance & Support</h1>
+    </div>
+  </div>
+</div>
+
+<div id="content" class="about-us-wrap gray-bg">
+  <section class="breadcrumb-wrap">
+    <div class="container">
+      <div class="row">
+        <nav aria-label="breadcrumb" class="brd">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+            <li class="breadcrumb-item"><%= link_to 'Services', services_index_path %></li>
+            <li class="breadcrumb-item active" aria-current="page">Maintenance & Support</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-am white-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Proactive Rails Maintenance for Peak Performance</h2>
+          <p class="lead">Our comprehensive Ruby on Rails maintenance and support services ensure your Dallas-Fort Worth business runs smoothly 24/7. From proactive monitoring to rapid issue resolution, we keep your Rails applications secure, performant, and up-to-date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-am gray-bg pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-4">
+          <h2>Comprehensive Maintenance Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="service-card h-100 p-4 white-bg">
+            <h3>24/7 Monitoring & Support</h3>
+            <ul>
+              <li>Real-time application performance monitoring</li>
+              <li>Automated alerting for errors and anomalies</li>
+              <li>24/7 on-call support for critical issues</li>
+              <li>Incident response and resolution (15-min SLA)</li>
+              <li>Dedicated Slack/Teams channel for rapid communication</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="service-card h-100 p-4 white-bg">
+            <h3>Security & Updates</h3>
+            <ul>
+              <li>Regular security patches and updates</li>
+              <li>Vulnerability scanning and penetration testing</li>
+              <li>Rails and Ruby version upgrade management</li>
+              <li>Gem dependency updates and compatibility testing</li>
+              <li>Security compliance audits (SOC 2, HIPAA, GDPR)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="service-card h-100 p-4 white-bg">
+            <h3>Performance Optimization</h3>
+            <ul>
+              <li>Continuous performance monitoring and tuning</li>
+              <li>Database query optimization and indexing</li>
+              <li>Cache strategy implementation and optimization</li>
+              <li>Load testing and capacity planning</li>
+              <li>CDN configuration and asset optimization</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="service-card h-100 p-4 white-bg">
+            <h3>Infrastructure Management</h3>
+            <ul>
+              <li>Server configuration and optimization</li>
+              <li>Automated backup and disaster recovery</li>
+              <li>Infrastructure scaling and capacity management</li>
+              <li>CI/CD pipeline maintenance and optimization</li>
+              <li>Cloud cost optimization (AWS, Azure, GCP)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-am white-bg pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Flexible Support Plans</h2>
+          <p>Choose the maintenance plan that fits your business needs:</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card h-100 p-4 gray-bg">
+            <h3>Essential</h3>
+            <p class="plan-desc">For small to medium applications</p>
+            <ul>
+              <li>Business hours support (9 AM - 6 PM CT)</li>
+              <li>Monthly security updates</li>
+              <li>Basic performance monitoring</li>
+              <li>Quarterly Rails version updates</li>
+              <li>Email support with 4-hour response time</li>
+              <li>Monthly maintenance reports</li>
+            </ul>
+            <div class="text-center mt-4">
+              <%= link_to "Learn More", contact_index_path, class: "red-btn hvr-radial-in" %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card h-100 p-4 white-bg border-primary">
+            <h3>Professional</h3>
+            <p class="plan-desc">For growing businesses</p>
+            <ul>
+              <li>Extended hours support (7 AM - 10 PM CT)</li>
+              <li>Weekly security scans and patches</li>
+              <li>Advanced APM and error tracking</li>
+              <li>Monthly Rails and gem updates</li>
+              <li>Priority phone/Slack support (2-hour SLA)</li>
+              <li>Performance optimization reviews</li>
+              <li>Bi-weekly maintenance reports</li>
+            </ul>
+            <div class="text-center mt-4">
+              <%= link_to "Learn More", contact_index_path, class: "red-btn hvr-radial-in" %>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="pricing-card h-100 p-4 gray-bg">
+            <h3>Enterprise</h3>
+            <p class="plan-desc">For mission-critical applications</p>
+            <ul>
+              <li>24/7/365 support with on-call engineers</li>
+              <li>Real-time security monitoring and response</li>
+              <li>Proactive performance optimization</li>
+              <li>Continuous Rails version management</li>
+              <li>Dedicated engineer (15-min SLA)</li>
+              <li>Monthly architecture reviews</li>
+              <li>Weekly detailed reports and QBRs</li>
+              <li>Disaster recovery and business continuity</li>
+            </ul>
+            <div class="text-center mt-4">
+              <%= link_to "Learn More", contact_index_path, class: "red-btn hvr-radial-in" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-am gray-bg pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Proactive Maintenance Approach</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-3 mb-4">
+          <div class="maintenance-step text-center">
+            <h4>Monitor</h4>
+            <p>24/7 monitoring of application performance, errors, security, and infrastructure metrics.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="maintenance-step text-center">
+            <h4>Analyze</h4>
+            <p>Regular analysis of trends, potential issues, and optimization opportunities.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="maintenance-step text-center">
+            <h4>Act</h4>
+            <p>Proactive updates, optimizations, and fixes before they impact your business.</p>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="maintenance-step text-center">
+            <h4>Report</h4>
+            <p>Regular detailed reports on system health, improvements, and recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="row-am white-bg pt-5 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Why Choose RailsHouse for Maintenance?</h2>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-4 mb-4">
+          <h4>Dallas-Fort Worth Expertise</h4>
+          <p>Based in Fort Worth, we understand the unique needs of Texas businesses and provide local support with deep Rails expertise.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4>Proven Track Record</h4>
+          <p>We maintain applications serving millions of users with 99.9%+ uptime, processing billions in transactions annually.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4>Transparent Communication</h4>
+          <p>Regular reports, clear SLAs, and open communication channels ensure you're always informed about your application's health.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= render(:partial => 'layouts/sec8interestedblock') %>
+</div>
+
+<%= render(:partial => 'layouts/footerjsblock') %>

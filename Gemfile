@@ -39,6 +39,12 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Pagination
+gem 'kaminari'
+
+# SEO optimization
+gem 'meta-tags'
+
 gem 'bootstrap',  '~>4.3.1'
 
 gem 'font_awesome5_rails'

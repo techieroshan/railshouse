@@ -10,5 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 0) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_10_152236) do
+  create_table "articles", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
+    t.datetime "published_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "category"
+  end
+
+  create_table "portfolios", force: :cascade do |t|
+    t.string "title"
+    t.string "client"
+    t.string "industry"
+    t.text "description"
+    t.text "challenge"
+    t.text "solution"
+    t.text "results"
+    t.text "technologies"
+    t.datetime "published_at"
+    t.boolean "featured"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 end
