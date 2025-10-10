@@ -92,7 +92,7 @@ ul{margin: 0; padding: 0; list-style: none;}
 
 .ul li{margin-bottom: 10px;}
 
-/* .ul li{ list-style-image:url(../images/carts.jpg);} */
+/* .ul li{ list-style-image:image-url("carts.jpg");} */
 
 
 
@@ -238,9 +238,9 @@ border-radius: 35px; /*border: 1px solid #fff;*/ min-width: 180px; height: 42px;
 
 .home-slider .carousel-caption {	right: 0;	bottom: auto;	left: 0;	color: #fff;	text-align: center;	width: 48%;	top: 50%;	transform: scale(1) translate(0, -50%);	margin: auto;}
 
-.home-slider .carousel-control-next-icon {	background-image: url(../images/right-arrow.png);}
+.home-slider .carousel-control-next-icon {	background-image: image-url("right-arrow.png");}
 
-.home-slider .carousel-control-prev-icon {	background-image: url(../images/left-arrow.png);}
+.home-slider .carousel-control-prev-icon {	background-image: image-url("left-arrow.png");}
 
 .home-slider .carousel-control-next-icon, .home-slider .carousel-control-prev-icon {	width: 60px;	height: 60px; 	margin-top: 80px;}
 
@@ -250,7 +250,7 @@ border-radius: 35px; /*border: 1px solid #fff;*/ min-width: 180px; height: 42px;
 
 #experts {	padding: 40px 0 120px !important;}
 
-#experts {	background: url(../images/expert-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+#experts {	background: image-url("expert-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 #experts .exprt-title {
 
@@ -376,21 +376,21 @@ position: absolute;	bottom: -15px;	top: auto;	height: 5px;}
 
 #service-home .ser-img {	margin-bottom: 20px;}
 
-#service-home .service-single .service-single-inner {margin-bottom: 30px;   background: url(../images/ser1-back.png); 
+#service-home .service-single .service-single-inner {margin-bottom: 30px;   background: image-url("ser1-back.png"); 
 
 background-size: cover;	background-position: center center;	background-repeat: no-repeat;  border-radius: 6px;
 
 -moz-box-shadow: 1px 2px 7px -3px rgba(0,0,0,0.75);box-shadow: 1px 2px 7px -3px rgba(0,0,0,0.75); -webkit-box-shadow: 1px 2px 7px -3px rgba(0,0,0,0.75);	text-align: left;	padding: 30px 40px;}
 
-#service-home .service-single:nth-child(2) .service-single-inner {  background: url(../images/ser2-back.png); }
+#service-home .service-single:nth-child(2) .service-single-inner {  background: image-url("ser2-back.png"); }
 
-#service-home .service-single:nth-child(3) .service-single-inner {  background: url(../images/ser3-back.png); }
+#service-home .service-single:nth-child(3) .service-single-inner {  background: image-url("ser3-back.png"); }
 
-#service-home .service-single:nth-child(4) .service-single-inner {  background: url(../images/ser4-back.png); }
+#service-home .service-single:nth-child(4) .service-single-inner {  background: image-url("ser4-back.png"); }
 
-#service-home .service-single:nth-child(5) .service-single-inner {  background: url(../images/ser5-back.png); }
+#service-home .service-single:nth-child(5) .service-single-inner {  background: image-url("ser5-back.png"); }
 
-#service-home .service-single:nth-child(6) .service-single-inner {  background: url(../images/ser6-back.png); }
+#service-home .service-single:nth-child(6) .service-single-inner {  background: image-url("ser6-back.png"); }
 
 #service-home .ser-name {	font-size: 20px;	line-height: 26px;	font-weight: bold;	color: #000; margin-bottom: 10px;}
 
@@ -440,7 +440,7 @@ animation-timing-function: ease-in-out;-webkit-animation-iteration-count: 1;anim
 
 #clients {	padding: 70px 0 !important;}
 
-#clients{text-align: center; background: url(../images/client-back.png); background-size: cover; background-position: center center; background-repeat: no-repeat; }
+#clients{text-align: center; background: image-url("client-back.png"); background-size: cover; background-position: center center; background-repeat: no-repeat; }
 
 #clients h3{color: #000000;margin-bottom: 35px;}
 
@@ -456,7 +456,7 @@ animation-timing-function: ease-in-out;-webkit-animation-iteration-count: 1;anim
 
 .slider-logo.col-sm-12.co-lg-6.col-md-6.portfolio-left img {	width: 100%; max-width: 100%;}
 
-#portfolio {	background: url(../images/expert-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+#portfolio {	background: image-url("expert-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 #portfolio .bx-wrapper {		background: transparent;	padding: 50px 50px 0px;}
 
@@ -490,7 +490,7 @@ position: absolute;	bottom: -15px;	top: auto;	height: 5px;}
 
 #testimonial1 {padding: 70px 0 !important;}
 
-#testimonial1 {	background: url(../images/test-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+#testimonial1 {	background: image-url("test-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 #testimonial1 .col-center {margin: 0 auto;float: none !important;}
 
@@ -534,9 +534,9 @@ position: absolute;	bottom: -15px;	top: auto;	height: 5px;}
 
 #rail-house { padding: 0 !important;}
 
-#rail-house .rail-house-left {	background: url(../images/rail-left-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+#rail-house .rail-house-left {	background: image-url("rail-left-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
-#rail-house  .rail-house-right {padding: 110px 50px 110px 120px;	background: url(../images/rail-right-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+#rail-house  .rail-house-right {padding: 110px 50px 110px 120px;	background: image-url("rail-right-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 #rail-house .main-heading-port h1  {	font-size: 36px;	line-height: 29px;	font-weight: bold;	text-align: left;  color: #fff;text-transform: uppercase;	margin-bottom: 40px; position: relative;}
 
@@ -558,15 +558,15 @@ position: absolute;	bottom: -15px;	top: auto;	height: 5px;}
 
 	padding: 40px 30px 40px 60px;	border-radius: 6px;	background-color: #fff;}
 
-#rail-house .rail-customer-single.one .rail-wrap{  background-position: right bottom;	background-image: url(../images/rail1-back.png);	margin-right: -50px; background-size: 30% !important;
+#rail-house .rail-customer-single.one .rail-wrap{  background-position: right bottom;	background-image: image-url("rail1-back.png");	margin-right: -50px; background-size: 30% !important;
 
 background-repeat: no-repeat !important;}
 
-#rail-house .rail-customer-single.two .rail-wrap{	background-position: left bottom;	 background-image: url(../images/rail2-back.png);margin-left: -50px;  padding: 40px 60px 40px 32px; background-size: 30% !important;
+#rail-house .rail-customer-single.two .rail-wrap{	background-position: left bottom;	 background-image: image-url("rail2-back.png");margin-left: -50px;  padding: 40px 60px 40px 32px; background-size: 30% !important;
 
 background-repeat: no-repeat !important;}
 
-#rail-house .rail-customer-single.three .rail-wrap{background-position: right bottom;	 	background-image: url(../images/rail3-back.png);	margin-right: -50px; background-size: 30% !important;
+#rail-house .rail-customer-single.three .rail-wrap{background-position: right bottom;	 	background-image: image-url("rail3-back.png");	margin-right: -50px; background-size: 30% !important;
 
 background-repeat: no-repeat !important;}
 
@@ -584,11 +584,11 @@ background-repeat: no-repeat !important;}
 
     background-position: center center !important;}  
 
-#rail-house .rail-customer-single.one .rail-wrap::before {	background: url(../images/rail1.png);		left: -46px;	right: auto;}
+#rail-house .rail-customer-single.one .rail-wrap::before {	background: image-url("rail1.png");		left: -46px;	right: auto;}
 
-#rail-house .rail-customer-single.two .rail-wrap::before {	background: url(../images/rail2.png);	right: -46px;		}
+#rail-house .rail-customer-single.two .rail-wrap::before {	background: image-url("rail2.png");	right: -46px;		}
 
-#rail-house .rail-customer-single.three .rail-wrap::before {	background: url(../images/rail3.png);	left: -46px; }
+#rail-house .rail-customer-single.three .rail-wrap::before {	background: image-url("rail3.png");	left: -46px; }
 
 #interested.row-am {	padding: 0px !important; }
 
@@ -684,7 +684,7 @@ footer .right  a { color: #fff;}
 
 footer .footer1 .links ul li a:hover { color: #c00; }
 
-footer .footer1 {	padding: 80px 0 80px;	background: url(../images/expert-back.png);	background-position-x: 0%;	background-position-y: 0%;	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+footer .footer1 {	padding: 80px 0 80px;	background: image-url("expert-back.png");	background-position-x: 0%;	background-position-y: 0%;	background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 footer .footer1 .ser {	margin-top: 60px;}
 
@@ -702,9 +702,9 @@ footer .footer1 .ser {	margin-top: 60px;}
 
 .updates { font-size: 20px;  font-weight: 300; color: #fff;text-transform: uppercase; }
 
-.jumbotron.in-ban {	margin-top: 130px; padding: 0px !important; background-position: center center !important;	background-size: cover !important;	background-repeat: no-repeat !important;	background: url(../images/blog-banner.png);
+.jumbotron.in-ban {	margin-top: 130px; padding: 0px !important; background-position: center center !important;	background-size: cover !important;	background-repeat: no-repeat !important;	background: image-url("blog-banner.png");
 
-	height: 300px;	text-align: left; margin-bottom: 0px; border-radius: 0px;}
+	height: 480px;	text-align: left; margin-bottom: 0px; border-radius: 0px;}
 
 .ban-text {	text-align: center;	top: 50%;	position: absolute;	left: 0;	right: 0;	margin: auto;	transform: translate(0, -50%);}
 
@@ -902,7 +902,7 @@ text-align: left;	padding: 0px; border-radius: 6px;}
 
 
 
-.jumbotron.in-ban.team {		background: url(../images/team-banner.png);}	
+.jumbotron.in-ban.team {		background: image-url("team-banner.png");}	
 
 
 
@@ -1024,7 +1024,7 @@ transform: rotate(-4deg);margin-top: -60px;margin-left: 40px;}
 
 .first-sec {	padding-top: 10px !important;}
 
-.jumbotron.in-ban.about {		background: url(../images/about-banner.png);}	
+.jumbotron.in-ban.about {		background: image-url("about-banner.png");}	
 
 .about-us-wrap  .main-heading h1 {	font-size: 25px; margin-bottom: 40px; text-align: left;}
 
@@ -1088,7 +1088,7 @@ transform: rotate(-4deg);margin-top: -60px;margin-left: 40px;}
 
 /*service page*/
 
-.jumbotron.in-ban.service {		background: url(../images/service-back.png);}
+.jumbotron.in-ban.service {		background: image-url("service-back.png");}
 
 .service-wrap  .main-heading h1 {	font-size: 25px; margin-bottom: 40px; text-align: left;}
 
@@ -1130,11 +1130,11 @@ transform: rotate(-4deg);margin-top: -60px;margin-left: 40px;}
 
 .service-wrap .service-single:hover p, .service-single:hover .ser-title, .service-single:hover .ser-title i {	color: #fff;}
 
-.service-wrap .service-new {	background: url(../images/service-new-back2.png);	padding: 60px 0;background-repeat: no-repeat;	background-position: right top;	background-size: contain;}
+.service-wrap .service-new {	background: image-url("service-new-back2.png");	padding: 60px 0;background-repeat: no-repeat;	background-position: right top;	background-size: contain;}
 
 #about-us-second ul {	float: left;	width: 100%;}
 
-#about-us-second ul li {	background: url(../images/dot.png);	background-size: 15px;	background-position: left top 9px;	background-repeat: no-repeat;
+#about-us-second ul li {	background: image-url("dot.png");	background-size: 15px;	background-position: left top 9px;	background-repeat: no-repeat;
 
 	padding-left: 30px;	float: left;	width: 100%;	font-weight: 300;	margin-bottom: 20px;}
 
@@ -1206,7 +1206,7 @@ transform: rotate(-4deg);margin-top: -60px;margin-left: 40px;}
 
 
 
-.jumbotron.in-ban.portfolio {	background: url(../images/portfolio-banner.png);}
+.jumbotron.in-ban.portfolio {	background: image-url("portfolio-banner.png");}
 
 .port-title {	margin-bottom: 40px;}
 
@@ -1282,7 +1282,7 @@ color: #cc0000;	position: absolute;	bottom: -20px;	top: auto;	height: 4px;}
 
 /*portfolio detail page*/
 
-.jumbotron.in-ban.portfolio-detail {	background: url(../images/port-detai-banner.png); height: 480px;}
+.jumbotron.in-ban.portfolio-detail {	background: image-url("port-detai-banner.png"); height: 480px;}
 
 .jumbotron.in-ban.portfolio-detail .ban-text {		width: auto;	left: 0;	right: auto;	position: relative;	text-align: left;	width: auto;}
 
@@ -1292,15 +1292,15 @@ color: #cc0000;	position: absolute;	bottom: -20px;	top: auto;	height: 4px;}
 
 .portfolio-project .project-detail h1:after {	left: 0; right: auto;}
 
-.project-detail {	background: url(../images/project-back.png);	padding: 50px;
+.project-detail {	background: image-url("project-back.png");	padding: 50px;
 
 border-radius: 6px;background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
-.feature-left ul li {	background: url(../images/dot.png);	background-size: 15px;	background-position: left top 9px;	background-repeat: no-repeat;
+.feature-left ul li {	background: image-url("dot.png");	background-size: 15px;	background-position: left top 9px;	background-repeat: no-repeat;
 
 	padding-left: 30px;	float: left;	width: 100%;	font-weight: 300;	margin-bottom: 13px; font-size: 18px;color: #fff;font-weight: normal;}
 
-.feature-left {	background:  url(../images/feature-left-back.png);	background-size: cover;	background-position: center center;	background-repeat: no-repeat;
+.feature-left {	background:  image-url("feature-left-back.png");	background-size: cover;	background-position: center center;	background-repeat: no-repeat;
 
 	float: left;	width: 100%; height: 100%; padding: 20px 0;}
 
@@ -1312,7 +1312,7 @@ border-radius: 6px;background-size: cover;	background-position: center center;	b
 
 
 
-.client-detail { background: url(../images/client-background.png); background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
+.client-detail { background: image-url("client-background.png"); background-size: cover;	background-position: center center;	background-repeat: no-repeat;}
 
 .client-title { font-size: 59px; color: #fff; line-height: 29px; font-weight: bold; text-transform: uppercase;  margin-top: 110px;}
 
@@ -1350,7 +1350,7 @@ border-radius: 6px;background-size: cover;	background-position: center center;	b
 
 
 
-.jumbotron.in-ban.contact {	background: url(../images/contact-banner.png);}	
+.jumbotron.in-ban.contact {	background: image-url("contact-banner.png");}	
 
 .contact-wrap .contact-first-wrap {	padding-top: 10px !important;}
 
@@ -1380,7 +1380,7 @@ border-radius: 6px;background-size: cover;	background-position: center center;	b
 
 .contact-wrap .form-2 .input:focus {border-color: #42a883; -webkit-box-shadow: none; box-shadow: none;}
 
-.contact-wrap .form-2 .select{color: #666; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #FFFFFF url(../images/down-arrow.png) no-repeat right 10px center;}
+.contact-wrap .form-2 .select{color: #666; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: #FFFFFF image-url("down-arrow.png") no-repeat right 10px center;}
 
 
 
