@@ -574,9 +574,9 @@ background-repeat: no-repeat !important;}
 
 .rail-customer-single.left.one, .rail-customer-single.left.two, .rail-customer-single.left.three {	position: relative;}
 
-.rail-title {	font-size: 15px;	line-height: 26px;	font-weight: bold;	text-transform: uppercase;}
+.rail-title {	font-size: 15px;	line-height: 26px;	font-weight: bold;	text-transform: uppercase;	color: #333;}
 
-#rail-house .rail-customer-single .rail-wrap p {	font-size: 16px;	line-height: 20px;	font-weight: 300; margin-bottom: 0px;}
+#rail-house .rail-customer-single .rail-wrap p {	font-size: 16px;	line-height: 20px;	font-weight: 300; margin-bottom: 0px;	color: #333;}
 
 #rail-house .rail-customer-single .rail-wrap {	position: relative;}
 
