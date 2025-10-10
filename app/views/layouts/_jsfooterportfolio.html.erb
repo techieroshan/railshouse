@@ -8,9 +8,9 @@
 
     -->
 
-    <%= javascript_pack_tag "jquery-1" %>
-    <%= javascript_pack_tag "jquery" %>
-    <%= javascript_pack_tag "application" %>
+    <%= javascript_include_tag "jquery-1.9.1.min", 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag "jquery.mousewheel.min", 'data-turbo-track': 'reload' %>
+    <%= javascript_include_tag "jquery.mCustomScrollbar.concat.min", 'data-turbo-track': 'reload' %>
 	<script>
 
 		(function($){

@@ -53,7 +53,7 @@ group :development do
   gem 'web-console', '>= 4.0.0'
   gem 'listen', '~> 3.3'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+  gem "debug", platforms: %i[ mri mingw x64_mingw ], require: "debug/prelude"
 end
 
 group :test do

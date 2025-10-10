@@ -5,3 +5,11 @@ Rails.application.config.assets.version = "1.0"
 
 # Add additional assets to the asset load path.
 # Rails.application.config.assets.paths << Emoji.images_path
+Rails.application.config.assets.paths << Rails.root.join("app/javascript/stylesheets")
+Rails.application.config.assets.paths << Rails.root.join("app/javascript")
+
+# Precompile additional assets.
+# application.js, application.css, and all non-JS/CSS in the app/assets
+# folder are already added.
+Rails.application.config.assets.precompile += %w( application.scss bootstrapmin.js index.js scripts.js owlcarouselmin.js jquery-1.9.1.min.js jquery.mousewheel.min.js jquery.mCustomScrollbar.concat.min.js )
+
