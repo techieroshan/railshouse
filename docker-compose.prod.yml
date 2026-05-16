@@ -28,6 +28,7 @@ services:
       - RAILS_ENV=production
       - RAILS_LOG_TO_STDOUT=1
       - RAILS_SERVE_STATIC_FILES=1
+      - APP_HOST=${APP_HOST:-www.railshouse.com}
       - SECRET_KEY_BASE=${SECRET_KEY_BASE}
       - DATABASE_URL=postgresql://railshouse:${POSTGRES_PASSWORD}@railshouse-db:5432/railshouse_production
     volumes:
