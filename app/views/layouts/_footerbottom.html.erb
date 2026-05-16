@@ -36,7 +36,7 @@
 
 								</li>
 
-								<li><%= link_to('Contact Us', contact_index_path) %>
+								<li><%= link_to('Request a Quote', request_quote_path) %>
 
 								</li>
 
@@ -118,11 +118,9 @@
 
 								<li class="address">
 
-									<a href="https://maps.google.com/?q=1320+Pepperhill+Ln,+Fort+Worth,+TX+76131" target="_blank" rel="noopener">
+									<a href="https://maps.google.com/?q=Fort+Worth,+TX" target="_blank" rel="noopener">
 
-										<%= image_tag "location.png", alt: "Railshouse Location" %>1320 Pepperhill Ln,
-
-										<br>Fort Worth, TX 76131 USA</a>
+										<%= image_tag "location.png", alt: "Railshouse Location" %>Fort Worth, TX USA</a>
 
 								</li>
 
@@ -134,11 +132,6 @@
 
 								</li>
 
-								<li class="email">
-
-									<%= obfuscated_email('hello@railshouse.com', text: raw("#{image_tag('email.png', alt: 'Railshouse email')}hello@railshouse.com")) %>
-
-								</li>
 
 							</ul>
 

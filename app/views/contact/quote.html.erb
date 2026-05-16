@@ -1,239 +1,135 @@
 <%= render(:partial => 'layouts/headermenu') %>
 
 	<div class="jumbotron in-ban quote-banner">
-
 		<div class="container">
-
 			<div class="ban-text">
-
 				<div class="updates">Transform Your Vision Into Reality</div>
-
 				<h1>Request a Free Quote</h1>
-
+				<p class="banner-subtitle">Join 200+ organizations that trust RailsHouse for enterprise-grade Ruby on Rails solutions</p>
 			</div>
-
 		</div>
-
 	</div>
 
 	<!-- Content -->
-
 	<div id="content" class="quote-wrap">
-
 		<section class="breadcrumb-wrap">
-
 			<div class="container">
-
 				<div class="row">
-
 					<nav aria-label="breadcrumb" class="brd">
-
 						<ol class="breadcrumb">
-
 							<li class="breadcrumb-item"><a href="<%= root_path %>">Home</a></li>
-
 							<li class="breadcrumb-item active" aria-current="page">Request a Free Quote</li>
-
 						</ol>
-
 					</nav>
-
 				</div>
-
 			</div>
-
 		</section>
 
 		<!-- Section 1 -->
-
 		<section class="row-am quote-content-wrap">
-
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-md-6 quote-info">
-
 						<div class="main-heading wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-
 							<h2>Partner with Industry-Leading Rails Experts</h2>
-
 						</div>
-
 						
-
-						<p>At RailsHouse, we deliver enterprise-grade Ruby on Rails solutions that drive digital transformation. Our team of seasoned consultants brings decades of combined experience working with Fortune 500 companies and innovative startups alike.</p>
-
+						<p class="quote-intro">At RailsHouse, we deliver enterprise-grade Ruby on Rails solutions that drive digital transformation. Our team of seasoned consultants brings decades of combined experience working with Fortune 500 companies and innovative startups alike.</p>
 						
-
 						<div class="quote-benefits">
-
 							<h3>Why Choose RailsHouse?</h3>
-
 							<ul class="benefits-list">
-
 								<li><i class="icofont-check-circled"></i> <strong>Strategic Expertise:</strong> Big 4 consulting methodology applied to technical excellence</li>
-
 								<li><i class="icofont-check-circled"></i> <strong>Proven Track Record:</strong> Successfully delivered 200+ Rails projects across diverse industries</li>
-
 								<li><i class="icofont-check-circled"></i> <strong>Scalable Solutions:</strong> Architecture designed for growth, from MVP to enterprise scale</li>
-
 								<li><i class="icofont-check-circled"></i> <strong>Agile Delivery:</strong> Rapid deployment with continuous integration and delivery pipelines</li>
-
 								<li><i class="icofont-check-circled"></i> <strong>Quality Assurance:</strong> Comprehensive testing and WCAG 2.2 AA compliance standards</li>
-
 								<li><i class="icofont-check-circled"></i> <strong>Dallas-Fort Worth Based:</strong> Local presence with global capabilities</li>
-
 							</ul>
-
 						</div>
-
 						
-
 						<div class="quote-services">
-
 							<h3>Our Core Services</h3>
-
 							<div class="services-grid">
-
 								<div class="service-item">
-
 									<i class="icofont-ui-settings"></i>
-
 									<h4>Consulting & Strategy</h4>
-
 									<p>Technical architecture, roadmap planning, and digital transformation advisory</p>
-
 								</div>
-
 								<div class="service-item">
-
 									<i class="icofont-code"></i>
-
 									<h4>Custom Development</h4>
-
 									<p>Enterprise applications, APIs, microservices, and cloud-native solutions</p>
-
 								</div>
-
 								<div class="service-item">
-
 									<i class="icofont-refresh"></i>
-
 									<h4>Migration & Modernization</h4>
-
 									<p>Legacy system upgrades, Rails version migrations, and platform modernization</p>
-
 								</div>
-
 								<div class="service-item">
-
 									<i class="icofont-users-alt-4"></i>
-
 									<h4>Staff Augmentation</h4>
-
 									<p>Senior Rails developers, architects, and DevOps engineers on demand</p>
-
 								</div>
-
 							</div>
-
 						</div>
-
 					</div>
-
 					
-
 					<div class="col-md-6 quote-form-container">
-
-						<div class="form-wrapper">
-
+						<div class="form-wrapper" style="overflow: visible;">
 							<div class="form-header">
-
 								<h3>Get Your Personalized Quote</h3>
-
 								<p>Share your project requirements and our team will provide a detailed proposal within 24 hours.</p>
-
 							</div>
-
 							
-
-							<div id="companyhub-form" class="companyhub-form-container">
-
-								<script src="https://app.companyhub.com/scripts/companyhub.forms.js"></script>
-
-								<script>companyhubForms.render("https://app.companyhub.com/webtolead/renderform/MjIzNzM1?name=Contact_FormRailshousecom", "companyhub-form");</script>
-
-							</div>
-
+							<div id="companyhub-form" class="companyhub-form-container" style="width: 100%; height: 1000px; overflow: visible;"></div>
+							<script src="https://app.companyhub.com/scripts/companyhub.forms.js"></script>
+							<script>
+								companyhubForms.render("https://app.companyhub.com/webtolead/renderform/MjIzNzM1?name=Contact_FormRailshousecom", "companyhub-form");
+								// Force iframe height after it loads
+								setTimeout(function() {
+									var iframes = document.querySelectorAll('#companyhub-form iframe');
+									iframes.forEach(function(f) { f.style.height = '1000px'; f.style.minHeight = '1000px'; f.scrolling = 'no'; });
+								}, 1000);
+								setTimeout(function() {
+									var iframes = document.querySelectorAll('#companyhub-form iframe');
+									iframes.forEach(function(f) { f.style.height = '1000px'; f.style.minHeight = '1000px'; f.scrolling = 'no'; });
+								}, 3000);
+							</script>
 						</div>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</section>
-
 		
-
 		<!-- Trust Indicators Section -->
-
 		<section class="row-am trust-indicators">
-
 			<div class="container">
-
 				<div class="row">
-
 					<div class="col-md-12 text-center">
-
 						<h3>Trusted by Leading Organizations</h3>
-
 						<div class="trust-stats">
-
 							<div class="stat-item">
-
 								<div class="stat-number">200+</div>
-
 								<div class="stat-label">Projects Delivered</div>
-
 							</div>
-
 							<div class="stat-item">
-
 								<div class="stat-number">15+</div>
-
 								<div class="stat-label">Years of Excellence</div>
-
 							</div>
-
 							<div class="stat-item">
-
 								<div class="stat-number">98%</div>
-
 								<div class="stat-label">Client Satisfaction</div>
-
 							</div>
-
 							<div class="stat-item">
-
 								<div class="stat-number">24/7</div>
-
 								<div class="stat-label">Support Available</div>
-
 							</div>
-
 						</div>
-
 					</div>
-
 				</div>
-
 			</div>
-
 		</section>
-
 	</div>
 
 	<%= render(:partial => 'layouts/footerjsblock') %>

@@ -20,21 +20,12 @@ class FooterTest < ApplicationSystemTestCase
     end
   end
   
-  test "footer displays obfuscated email" do
-    visit root_url
-    
-    within("footer") do
-      # Email should be present but obfuscated
-      assert_selector "a[href*='hello']"
-    end
-  end
   
   test "footer displays new contact information" do
     visit root_url
     
     within("footer") do
-      assert_text "1320 Pepperhill Ln"
-      assert_text "Fort Worth, TX 76131"
+      assert_text "Fort Worth, TX USA"
       # Phone number without formatting
       assert_selector "a[href='tel:+18575672674']"
     end

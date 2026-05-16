@@ -23,6 +23,10 @@ Allow: /portfolio/*
 # Sitemap location
 Sitemap: https://www.railshouse.com/sitemap.xml
 
+# LLM context file for AI answer engines
+# See https://llmstxt.org for specification
+# llm.txt: https://www.railshouse.com/llm.txt
+
 # Crawl-delay for polite crawling (optional, in seconds)
 # Crawl-delay: 1
 

@@ -16,14 +16,14 @@ class ContactControllerTest < ActionDispatch::IntegrationTest
   test "contact page has proper meta tags" do
     get contact_index_url
     assert_response :success
-    assert_select "title", /Contact Us.*Dallas-Fort Worth/
+    assert_select "title", /Contact Us.*Ruby on Rails Consulting/
     assert_select "meta[name='description']"
   end
   
   test "quote page has proper meta tags" do
     get request_quote_url
     assert_response :success
-    assert_select "title", /Request.*Free Quote.*Dallas-Fort Worth/
+    assert_select "title", /Request a Free Quote.*Ruby on Rails Consulting/
     assert_select "meta[name='description']"
   end
 end

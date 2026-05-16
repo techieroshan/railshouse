@@ -64,8 +64,6 @@ module MetaTagsHelper
         "@type": "PostalAddress",
         "addressLocality": "Fort Worth",
         "addressRegion": "TX",
-        "postalCode": "76131",
-        "streetAddress": "1320 Pepperhill Ln",
         "addressCountry": "US"
       },
       "sameAs": [
@@ -98,6 +96,80 @@ module MetaTagsHelper
       "description": truncate(strip_tags(article.content), length: 160),
       "articleSection": article.category,
       "url": article_url(article)
+    }.to_json.html_safe
+  end
+
+  def structured_data_local_business
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "RailsHouse",
+      "url": root_url,
+      "logo": "#{request.base_url}/icon.png",
+      "image": "#{request.base_url}/icon.png",
+      "description": "Premier Ruby on Rails development and consulting company serving Dallas-Fort Worth, Texas and nationwide.",
+      "telephone": "+18575672674",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Fort Worth",
+        "addressRegion": "TX",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 32.7555,
+        "longitude": -97.3308
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Fort Worth" },
+        { "@type": "City", "name": "Dallas" },
+        { "@type": "State", "name": "Texas" },
+        { "@type": "Country", "name": "United States" }
+      ],
+      "priceRange": "$$$$",
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "knowsAbout": ["Ruby on Rails", "Web Development", "Software Consulting", "Rails Migration", "Staff Augmentation"]
+    }.to_json.html_safe
+  end
+
+  def structured_data_faq
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What services does RailsHouse offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RailsHouse offers Ruby on Rails consulting, custom development, migration and upgrades, maintenance and support, staff augmentation, testing, SEO optimization, code refactoring, front-end development, performance tuning, training, and advisory services."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is RailsHouse located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RailsHouse is based in Fort Worth, Texas, serving the Dallas-Fort Worth metroplex and clients nationwide across the United States."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I get a quote for my Rails project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+          "text": "Visit our Request a Quote page at railshouse.com/contact/quote to share your project details. Our team will follow up promptly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does RailsHouse work with the latest version of Ruby on Rails?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, RailsHouse works with all versions of Ruby on Rails including the latest Rails 8.x. We specialize in upgrading legacy Rails applications to current versions."
+          }
+        }
+      ]
     }.to_json.html_safe
   end
 

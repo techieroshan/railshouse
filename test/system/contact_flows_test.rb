@@ -9,9 +9,6 @@ class ContactFlowsTest < ApplicationSystemTestCase
     # Verify new contact information is displayed
     assert_text "+1 857 567 2674"
     assert_text "+1 469 532 0777"
-    assert_text "1320 Pepperhill Ln"
-    assert_text "Fort Worth, TX 76131 USA"
-    assert_text "hello@railshouse.com"
   end
   
   test "contact page does not display old contact form" do
@@ -33,9 +30,4 @@ class ContactFlowsTest < ApplicationSystemTestCase
     end
   end
   
-  test "contact page includes map with Fort Worth location" do
-    visit contact_index_url
-    
-    assert_selector "iframe[src*='Fort+Worth']"
-  end
 end

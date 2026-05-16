@@ -11,9 +11,6 @@
 
 				</div>
 
-				<div class="email"><%= obfuscated_email('hello@railshouse.com', text: raw('<i class="icofont-envelope-open"></i>hello@railshouse.com')) %>
-
-				</div>
 
 			</div>
 
@@ -23,7 +20,7 @@
 
 			<div class="navbar-header">	<a id="menu-toggle" href="#" class="btn btn-transparent btn-lg toggle" aria-label="Toggle navigation menu"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
 
-				<a href="index.html" class="navbar-brand wow rollIn">
+				<a href="<%= root_path %>" class="navbar-brand wow rollIn">
 
 					<%= image_tag "logo.png", alt: "Railshouse Logo" %>
 
@@ -97,9 +94,6 @@
 
 								</li>
 
-								<li><%= link_to('Contact Us', contact_index_path) %>
-
-								</li>
 
 							</ul>
 

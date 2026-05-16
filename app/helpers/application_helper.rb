@@ -10,7 +10,7 @@ module ApplicationHelper
                  domain.chars.map { |c| "&##{c.ord};" }.join
     
     # Create link with additional obfuscation
-    link_text = options[:text] || email
+    link_text = options[:text] || obfuscated
     css_class = options[:class] || ''
     
     content_tag(:a, 

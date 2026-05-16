@@ -11,9 +11,19 @@
     <%= stylesheet_link_tag 'main-styles', media: 'all', 'data-turbo-track': 'reload' %>
     <%= javascript_importmap_tags %>
     
-    <!-- Structured Data -->
+    <!-- Structured Data: Organization -->
     <script type="application/ld+json">
       <%= structured_data_organization %>
+    </script>
+
+    <!-- Structured Data: LocalBusiness (GEO) -->
+    <script type="application/ld+json">
+      <%= structured_data_local_business %>
+    </script>
+
+    <!-- Structured Data: FAQ (AEO/AIO) -->
+    <script type="application/ld+json">
+      <%= structured_data_faq %>
     </script>
     
     <%= yield :head %>
