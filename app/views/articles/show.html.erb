@@ -1,0 +1,64 @@
+<% content_for :head do %>
+  <script type="application/ld+json">
+    <%= structured_data_article(@article) %>
+  </script>
+  <script type="application/ld+json">
+    <%= structured_data_breadcrumb([
+      { name: 'Home', url: root_url },
+      { name: 'Articles', url: articles_url },
+      { name: @article.title, url: article_url(@article) }
+    ]) %>
+  </script>
+<% end %>
+
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban">
+  <div class="container">
+    <div class="ban-text">
+      <div class="updates">Article</div>
+      <h1><%= @article.title %></h1>
+    </div>
+  </div>
+</div>
+
+<main id="content" role="main">
+  <section class="breadcrumb-wrap gray-bg">
+    <div class="container">
+      <div class="row">
+        <nav aria-label="breadcrumb" class="brd">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item"><a href="/articles">Articles</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><%= @article.title %></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="row blog-detail">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blog-detail-content">
+            <div class="blog-detail-img">
+              <%= image_tag "blog-detail1.png", :alt => @article.title %>
+            </div>
+            <div class="blog-detail-text">
+              <h2><%= @article.title %></h2>
+              <p><strong>Published on:</strong> <%= @article.published_at.strftime('%B %d, %Y') %></p>
+              <div class="content">
+                <%= @article.content.html_safe %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= render(:partial => 'layouts/sec8interestedblock') %>
+</main>
+
+<%= render(:partial => 'layouts/footerjsblock') %>

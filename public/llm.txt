@@ -1,0 +1,56 @@
+# RailsHouse - Ruby on Rails Development & Consulting
+
+## About
+RailsHouse is a premier Ruby on Rails consulting company based in Fort Worth, Texas, serving the Dallas-Fort Worth metroplex and businesses nationwide. With over 15 years of software development expertise, we deliver enterprise-grade Rails solutions that drive business growth.
+
+## Services
+- **Ruby on Rails Consulting**: Architecture reviews, technical strategy, and digital transformation advisory
+- **Custom Rails Development**: Enterprise applications, APIs, microservices, and cloud-native solutions
+- **Rails Migration & Upgrades**: Legacy system modernization and Rails version upgrades
+- **Rails Maintenance & Support**: 24/7 monitoring, security patches, and proactive infrastructure management
+- **Staff Augmentation**: Senior Rails developers, architects, and DevOps specialists on demand
+- **Rails Testing & QA**: Comprehensive test suites, CI/CD pipelines, and quality assurance
+- **SEO Optimization**: Technical SEO, performance optimization, and search visibility improvements
+- **Code Refactoring**: Microservices architecture, code modernization, and technical debt reduction
+- **Front End Development**: Modern JavaScript frameworks integrated with Rails backends
+- **Performance Tuning**: Database optimization, caching strategies, and application profiling
+- **Rails Training**: Team training, workshops, and mentorship programs
+- **Advisory Services**: CTO-as-a-Service, technology roadmapping, and vendor evaluation
+
+## Location
+Fort Worth, TX USA
+Serving the Dallas-Fort Worth metroplex and clients nationwide
+
+## Contact
+- Website: https://www.railshouse.com
+- Phone: +1 857 567 2674
+- Fax: +1 469 532 0777
+- Request a Quote: https://www.railshouse.com/contact/quote
+
+## Technology Expertise
+- Ruby on Rails (all versions, including latest Rails 8.x)
+- Ruby programming language
+- PostgreSQL, MySQL, SQLite databases
+- Redis, Sidekiq for background processing
+- Docker, Kubernetes for containerization
+- AWS, Heroku, DigitalOcean cloud deployment
+- React, Vue.js, Stimulus, Hotwire/Turbo front-end
+- RESTful APIs, GraphQL
+- RSpec, Minitest, Capybara testing frameworks
+- CI/CD with GitHub Actions, CircleCI, Jenkins
+
+## Key Differentiators
+- Big 4 consulting methodology applied to technical excellence
+- 200+ Rails projects successfully delivered
+- 98% client satisfaction rate
+- WCAG 2.2 AA accessibility compliance
+- Agile delivery with continuous integration
+- Local presence in Fort Worth with global capabilities
+
+## Industries Served
+- Healthcare & Medicare
+- Financial Services & Payments
+- E-commerce & SaaS
+- Education & EdTech
+- Real Estate & PropTech
+- Government & Public Sector

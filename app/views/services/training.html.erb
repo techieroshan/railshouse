@@ -1,0 +1,136 @@
+<%= render(:partial => 'layouts/headermenu') %>
+
+<div class="jumbotron in-ban service">
+	<div class="container">
+		<div class="ban-text">
+			<div class="updates">Professional Development Training</div>
+			<h1>Ruby on Rails Training</h1>
+		</div>
+	</div>
+</div>
+
+<div id="content" class="service-wrap">
+	<section class="breadcrumb-wrap">
+		<div class="container">
+			<div class="row">
+				<nav aria-label="breadcrumb" class="brd">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><%= link_to "Home", root_path %></li>
+						<li class="breadcrumb-item"><%= link_to "Services", services_index_path %></li>
+						<li class="breadcrumb-item active" aria-current="page">Training</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am first-sec">
+		<div class="container">
+			<div class="row">
+				<div class="main-heading wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+					<h1>Expert Rails Training & Team Development</h1>
+				</div>
+				<p>Accelerate your team's Rails expertise with our comprehensive training programs. Our experienced instructors deliver hands-on, practical training covering everything from Rails fundamentals to advanced architectural patterns. Whether upskilling existing developers or onboarding new talent, our customized curriculum ensures your team masters the skills needed for success.</p>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser1.png') %>" alt="Corporate Training">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Corporate Training Programs</div>
+							<p>Customized on-site or remote training programs designed for your team's specific needs, skill levels, and business objectives.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser2.png') %>" alt="Rails Bootcamp">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Rails Intensive Bootcamps</div>
+							<p>Accelerated learning programs that transform beginners into productive Rails developers in weeks, not months.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="about-two-part">
+				<div class="col-md-6 about-two-inner-left">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser3.png') %>" alt="Advanced Topics">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">Advanced Rails Architecture</div>
+							<p>Deep-dive training on advanced patterns, microservices, performance optimization, and enterprise-scale Rails development.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 about-two-inner-right">
+					<div class="both">
+						<div class="about-left-img">
+							<img src="<%= asset_path('ser4.png') %>" alt="Mentorship">
+						</div>
+						<div class="about-right-cont">
+							<div class="about-title">One-on-One Mentorship</div>
+							<p>Personalized coaching sessions with senior Rails experts to accelerate learning and solve specific technical challenges.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about-us-second" class="service row-am">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 left all">
+					<%= image_tag 'service-left.png', alt: "Rails Training" %>
+				</div>
+				<div class="col-md-6 right">
+					<div class="ser-title"><i class="icofont-education"></i>Training Curriculum</div>
+					<p>Our comprehensive training programs cover the full Rails ecosystem, from fundamentals to advanced enterprise patterns, with hands-on labs and real-world projects.</p>
+					<ul>
+						<li>Rails fundamentals and MVC architecture</li>
+						<li>Active Record, migrations, and database design</li>
+						<li>RESTful API development and GraphQL</li>
+						<li>Authentication, authorization, and security</li>
+						<li>Testing with RSpec, Minitest, and TDD practices</li>
+						<li>Front-end integration (React, Vue, Hotwire)</li>
+						<li>Performance optimization and caching</li>
+						<li>Background jobs with Sidekiq and Active Job</li>
+						<li>Deployment, DevOps, and CI/CD pipelines</li>
+						<li>Advanced patterns and architectural best practices</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="row-am service-new">
+		<div class="container ser-new-inner">
+			<div class="row">
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-book-alt"></i>Hands-On Learning</div>
+					<p>Learn by building real applications with guided instruction, code reviews, and best practice recommendations from experienced Rails developers who have shipped production systems.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-users-alt-5"></i>Team Workshops</div>
+					<p>Interactive team workshops focusing on collaborative development practices, code quality standards, and establishing Rails development workflows tailored to your organization.</p>
+				</div>
+				<div class="service-single">
+					<div class="ser-title"><i class="icofont-certificate-alt-1"></i>Certification Programs</div>
+					<p>Structured learning paths with assessments and certification upon completion, providing measurable validation of Rails proficiency for career advancement.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<%= render(:partial => 'layouts/sec8interestedblock') %>
+</div>
+
+<%= render(:partial => 'layouts/footerjsblock') %>

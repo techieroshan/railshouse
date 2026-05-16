@@ -38,7 +38,7 @@
 
 								<div class="exp-img">
 
-									 <%= image_pack_tag "exp1.png", alt: "Rapid Development" %>
+									 <%= image_tag "exp1.png", alt: "Rapid Development" %>
 
 								</div>
 
@@ -52,7 +52,7 @@
 
 								<div class="exp-img">
 
-									<%= image_pack_tag "exp2.png", alt: "Cost Savings" %>
+									<%= image_tag "exp2.png", alt: "Cost Savings" %>
 
 								</div>
 
@@ -66,7 +66,7 @@
 
 								<div class="exp-img">
 
-									<%= image_pack_tag "exp3.png", alt: "Onward and Upward" %>
+									<%= image_tag "exp3.png", alt: "Onward and Upward" %>
 
 								</div>
 
@@ -78,7 +78,7 @@
 
 						</div>
 
-						<div class="red-btn-wrp c-center"><a href="#" class="red-btn hvr-radial-in">Know More</a>
+						<div class="red-btn-wrp c-center"><%= link_to "Know More", services_index_path, class: "red-btn hvr-radial-in", aria: { label: "Learn more about our development services" } %>
 
 						</div>
 

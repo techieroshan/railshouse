@@ -6,12 +6,12 @@
 
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 
-		<%= javascript_pack_tag "bootstrapmin" %>
-		<%= javascript_pack_tag "index" %>
-		<%= javascript_pack_tag "scripts" %>
+		<%= javascript_include_tag "bootstrapmin", 'data-turbo-track': 'reload' %>
+		<%= javascript_include_tag "index", 'data-turbo-track': 'reload' %>
+		<%= javascript_include_tag "scripts", 'data-turbo-track': 'reload' %>
 
-	    <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
-		<%= javascript_pack_tag "owlcarouselmin" %>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+		<%= javascript_include_tag "owlcarouselmin", 'data-turbo-track': 'reload' %>
 
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>

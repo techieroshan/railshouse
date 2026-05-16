@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc><%= root_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Company Pages -->
+  <url>
+    <loc><%= company_index_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc><%= company_team_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Services Pages -->
+  <url>
+    <loc><%= services_index_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= services_consulting_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= services_development_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= services_migration_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= services_maintenance_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc><%= services_staffing_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Quote Page -->
+  <url>
+    <loc><%= request_quote_url %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Portfolio Pages -->
+  <url>
+    <loc><%= portfolio_index_url %></loc>
+    <lastmod><%= @portfolios.first&.updated_at&.strftime('%Y-%m-%d') || Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <% @portfolios.each do |portfolio| %>
+  <url>
+    <loc><%= portfolio_url(portfolio) %></loc>
+    <lastmod><%= portfolio.updated_at.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <% end %>
+
+  <!-- Articles Pages -->
+  <url>
+    <loc><%= articles_url %></loc>
+    <lastmod><%= @articles.first&.updated_at&.strftime('%Y-%m-%d') || Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <% @articles.each do |article| %>
+  <url>
+    <loc><%= article_url(article) %></loc>
+    <lastmod><%= article.updated_at.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <% end %>
+
+  <!-- Category Pages -->
+  <% Article.used_categories.each do |category| %>
+  <url>
+    <loc><%= category_articles_url(category: category) %></loc>
+    <lastmod><%= Time.now.strftime('%Y-%m-%d') %></lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <% end %>
+</urlset>

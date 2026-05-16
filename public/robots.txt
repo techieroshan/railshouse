@@ -1,1 +1,66 @@
+# robots.txt for RailsHouse - Fort Worth, Texas Ruby on Rails Consulting
+# https://www.railshouse.com
 # See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow admin and system directories
+Disallow: /admin/
+Disallow: /rails/
+Disallow: /assets/config/
+
+# Disallow duplicate content from pagination
+Disallow: /*?page=
+Disallow: /*&page=
+
+# Allow crawling of articles and portfolio with parameters
+Allow: /articles/category/*
+Allow: /articles/archive/*
+Allow: /portfolio/*
+
+# Sitemap location
+Sitemap: https://www.railshouse.com/sitemap.xml
+
+# LLM context file for AI answer engines
+# See https://llmstxt.org for specification
+# llm.txt: https://www.railshouse.com/llm.txt
+
+# Crawl-delay for polite crawling (optional, in seconds)
+# Crawl-delay: 1
+
+# Specific directives for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI Agents and Answer Engines (AEO - Answer Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /

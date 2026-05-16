@@ -3,4 +3,3 @@
 # assets compile automatically when we change them
 
 web: bundle exec puma -C config/puma.rb
-webpacker: ./bin/webpack-dev-server

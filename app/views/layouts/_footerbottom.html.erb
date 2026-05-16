@@ -1,5 +1,7 @@
 		<!-- Footer -->
 
+		<footer role="contentinfo">
+
 		<footer>
 
 			<div class="row footer1">
@@ -30,11 +32,11 @@
 
 								</li>
 
-								<li><%= link_to('Articles', articles_index_path) %>
+								<li><%= link_to('Articles', articles_path) %>
 
 								</li>
 
-								<li><%= link_to('Contact Us', contact_index_path) %>
+								<li><%= link_to('Request a Quote', request_quote_path) %>
 
 								</li>
 
@@ -48,27 +50,27 @@
 
 							<ul>
 
-								<li><a href="#">Ruby on Rails Consulting</a>
+								<li><%= link_to 'Ruby on Rails Consulting', services_consulting_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Migration</a>
+								<li><%= link_to 'Ruby on Rails Migration', services_migration_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Upgrade</a>
+								<li><%= link_to 'Ruby on Rails Development', services_development_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Testing</a>
+								<li><%= link_to 'Ruby on Rails Testing', services_testing_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails SEO</a>
+								<li><%= link_to 'Ruby on Rails SEO', services_seo_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Maintenance</a>
+								<li><%= link_to 'Ruby on Rails Maintenance', services_maintenance_path %>
 
 								</li>
 
@@ -80,27 +82,27 @@
 
 							<ul>
 
-								<li><a href="#">Staff Augmentation</a>
+								<li><%= link_to 'Staff Augmentation', services_staffing_path %>
 
 								</li>
 
-								<li><a href="#">Refactoring for Microservices</a>
+								<li><%= link_to 'Refactoring for Microservices', services_refactoring_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Front End JS Dev</a>
+								<li><%= link_to 'Ruby on Rails Front End JS Dev', services_frontend_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Performance Tuning</a>
+								<li><%= link_to 'Ruby on Rails Performance Tuning', services_performance_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Training</a>
+								<li><%= link_to 'Ruby on Rails Training', services_training_path %>
 
 								</li>
 
-								<li><a href="#">Ruby on Rails Advisory Services</a>
+								<li><%= link_to 'Ruby on Rails Advisory Services', services_advisory_path %>
 
 								</li>
 
@@ -116,29 +118,20 @@
 
 								<li class="address">
 
-									<a href="#">
+									<a href="https://maps.google.com/?q=Fort+Worth,+TX" target="_blank" rel="noopener">
 
-										<%= image_pack_tag "location.png", alt: "Railshouse Location" %>309-383, Albert St,
-
-										<br>Waterloo, ON, N2L 6E3, Canada</a>
+										<%= image_tag "location.png", alt: "Railshouse Location" %>Fort Worth, TX USA</a>
 
 								</li>
 
 								<li class="callf">
 
-									<a href="tel: +1 123 456 7890">
+									<a href="tel:+18575672674">
 
-										<%= image_pack_tag "call.png", alt: "Railshouse Phone" %>+1 226 666 1140</a>
-
-								</li>
-
-								<li class="email">
-
-									<a href="mailto: sales@railshouse.com">
-
-										<%= image_pack_tag "email.png", alt: "Railshouse email" %>sales@railshouse.com</a>
+										<%= image_tag "call.png", alt: "Railshouse Phone" %>+1 857 567 2674</a>
 
 								</li>
+
 
 							</ul>
 
@@ -156,7 +149,7 @@
 
 					<div class="row">
 
-						<div class="left col-md-4">© 2009-2019. RailsHouse. All Rights Reserved</div>
+						<div class="left col-md-4">© 2009-<%= current_year %>. RailsHouse. All Rights Reserved</div>
 
 						<div class="center col-md-4 wow fadeInRight animated animated">
 
@@ -186,7 +179,7 @@
 
 						</div>
 
-						<div class="right col-md-4">Developed by <a href="https://www.railshouse.com/">RailsHouse, division of Cogdina Inc</a>
+						<div class="right col-md-4">Developed by <a href="https://www.railshouse.com/">RailsHouse</a>, division of <a href="https://kosansh.com" target="_blank" rel="noopener">Kosansh Solutions Inc</a>
 
 						</div>
 

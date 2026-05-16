@@ -6,7 +6,7 @@
 
 					<div class="col-sm-12 col-md-5 interest-left">
 
-						<%= image_pack_tag "interest-image.png", alt: "Interested in Ruby on Rails Services" %>
+						<%= image_tag "interest-image.png", alt: "Interested in Ruby on Rails Services" %>
 
 					</div>
 
@@ -16,7 +16,7 @@
 
 						<p>Railshouse is an innovative web design and development team of Cogdina Inc focused on building products that satisfy our customers' needs. Whether you want the flexibility and modularity of Ruby on Rails for creating e-commerce, community or corporate site, or a framework for developing a database-backed web application in Ruby on Rails, we have the experience and expertise needed to make your project a success.</p>
 
-						<div class="white-btn-wrp"><a href="#" role="button" class="white-btn hvr-radial-in2">know more</a>
+						<div class="white-btn-wrp"><%= link_to "Know More", request_quote_path, role: "button", class: "white-btn hvr-radial-in2", aria: { label: "Request a free quote for our services" } %>
 
 						</div>
 

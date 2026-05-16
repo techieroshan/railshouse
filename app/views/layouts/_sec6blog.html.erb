@@ -13,36 +13,36 @@
 				</div>
 
 				<div class="three-blog row">
-
+					<% Article.published.limit(3).each do |article| %>
 					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
 
 						<div class="blog-single-inner">
 
 							<div class="blog-img">
 
-								<%= image_pack_tag "blog1.png", alt: "Rails Blog" %>
+								<%= image_tag "blog#{rand(1..4)}.png", alt: article.title %>
 
 							</div>
 
 							<div class="blog-cont-wrapper">
 
-								<div class="date">15
+								<div class="date"><%= article.published_at.day %>
 
-									<br><span class="month font-uppercase">may</span>
+									<br><span class="month font-uppercase"><%= article.published_at.strftime('%b') %></span>
 
 								</div>
 
-								<div class="blog-name ">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
+								<div class="blog-name"><%= link_to article.title, article_path(article) %></div>
 
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem psum has been the industry's standard dummy text ever since simply dummy text of the printing and typesetting industry Lor.</p>
+								<p><%= truncate(strip_tags(article.content), length: 180) %></p>
 
 								<div class="blog-btn">
 
-									<a href="#">
+									<%= link_to article_path(article), aria: { label: "Read more about #{article.title}" } do %>
 
-										<%= image_pack_tag "red-right.png", alt: "Rails Red right" %>
+										<%= image_tag "red-right.png", alt: "Read More" %>
 
-									</a>
+									<% end %>
 
 								</div>
 
@@ -51,82 +51,7 @@
 						</div>
 
 					</div>
-
-					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
-
-						<div class="blog-single-inner">
-
-							<div class="blog-img">
-
-								<%= image_pack_tag "blog2.png", alt: "Rails blog 2" %>
-
-							</div>
-
-							<div class="blog-cont-wrapper">
-
-								<div class="date">15
-
-									<br><span class="month font-uppercase">may</span>
-
-								</div>
-
-								<div class="blog-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
-
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem psum has been the industry's standard dummy text ever since simply dummy text of the printing and typesetting industry Lor.</p>
-
-								<div class="blog-btn">
-
-									<a href="#">
-
-										<%= image_pack_tag "red-right.png", alt: "Rails Red Right" %>
-
-									</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<div class="col-sm-12 col-md-4 col-lg-4 blog-single">
-
-						<div class="blog-single-inner">
-
-							<div class="blog-img">
-
-								<%= image_pack_tag "blog3.png", alt: "Rails Blog 3" %>
-
-							</div>
-
-							<div class="blog-cont-wrapper">
-
-								<div class="date">15
-
-									<br><span class="month font-uppercase">may</span>
-
-								</div>
-
-								<div class="blog-name">Lorem Ipsum is simply dummy text of the printing and typesetting.</div>
-
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem psum has been the industry's standard dummy text ever since simply dummy text of the printing and typesetting industry Lor.</p>
-
-								<div class="blog-btn">
-
-									<a href="#">
-
-										<%= image_pack_tag "red-right.png", alt: "Rails red right" %>
-
-									</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</div>
+					<% end %>
 
 				</div>
 
