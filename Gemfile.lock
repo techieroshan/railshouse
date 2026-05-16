@@ -109,8 +109,9 @@ GEM
     erb (6.0.4)
     erubi (1.13.1)
     execjs (2.10.1)
-    ffi (1.17.4)
+    ffi (1.17.4-aarch64-linux-gnu)
     ffi (1.17.4-arm64-darwin)
+    ffi (1.17.4-x86_64-linux-gnu)
     font_awesome5_rails (1.5.0)
       nokogiri (>= 1.11.3)
       railties (>= 4.2)
@@ -174,12 +175,16 @@ GEM
     net-smtp (0.5.1)
       net-protocol
     nio4r (2.7.5)
-    nokogiri (1.19.3)
+    nokogiri (1.19.3-aarch64-linux-gnu)
+      racc (~> 1.4)
     nokogiri (1.19.3-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.19.3-x86_64-linux-gnu)
+      racc (~> 1.4)
     ostruct (0.6.3)
-    pg (1.6.3)
+    pg (1.6.3-aarch64-linux)
     pg (1.6.3-arm64-darwin)
+    pg (1.6.3-x86_64-linux)
     popper_js (1.16.1)
     pp (0.6.3)
       prettyprint
@@ -291,8 +296,9 @@ GEM
     zeitwerk (2.7.5)
 
 PLATFORMS
-  x86_64-linux
+  aarch64-linux
   arm64-darwin-25
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -321,4 +327,4 @@ RUBY VERSION
    ruby 3.4.1p0
 
 BUNDLED WITH
-   2.7.2
+   2.6.2
