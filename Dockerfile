@@ -2,7 +2,7 @@ FROM ruby:3.4.1-slim AS base
 
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y \
-    libpq5 libvips curl && \
+    libpq5 libvips curl nodejs && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 WORKDIR /rails
@@ -16,7 +16,7 @@ FROM base AS build
 
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y \
-    build-essential git pkg-config libpq-dev && \
+    build-essential git pkg-config libpq-dev nodejs && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 COPY Gemfile Gemfile.lock ./
@@ -36,6 +36,7 @@ COPY --from=build /rails /rails
 
 RUN groupadd --system --gid 1000 rails && \
     useradd rails --uid 1000 --gid 1000 --create-home --shell /bin/bash && \
+    mkdir -p db log storage tmp public && \
     chown -R rails:rails db log storage tmp public
 
 USER rails:rails

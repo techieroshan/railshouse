@@ -43,12 +43,26 @@ jobs:
           key: ${{ secrets.DEPLOY_SSH_KEY }}
           port: 6150
           script: |
+            set -e
             cd /home/deployuser/railshouse
+            test -f .env
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
             docker pull ghcr.io/techieroshan/railshouse:latest
-            docker compose -f docker-compose.prod.yml down
-            docker compose -f docker-compose.prod.yml up -d
-            sleep 10
-            docker exec railshouse-app ./bin/rails db:prepare
+            docker compose -f docker-compose.prod.yml --env-file .env up -d railshouse-db
+            for i in {1..30}; do
+              DB_STATUS=$(docker inspect --format="{{.State.Health.Status}}" railshouse-db 2>/dev/null || echo starting)
+              [ "$DB_STATUS" = "healthy" ] && break
+              [ "$i" -eq 30 ] && { echo "DB_HEALTH_TIMEOUT"; docker logs --tail 80 railshouse-db; exit 1; }
+              sleep 2
+            done
+            docker compose -f docker-compose.prod.yml --env-file .env run --rm railshouse ./bin/rails db:prepare
+            docker compose -f docker-compose.prod.yml --env-file .env up -d railshouse
+            for i in {1..40}; do
+              APP_STATUS=$(docker inspect --format="{{.State.Health.Status}}" railshouse-app 2>/dev/null || echo starting)
+              [ "$APP_STATUS" = "healthy" ] && break
+              [ "$i" -eq 40 ] && { echo "APP_HEALTH_TIMEOUT"; docker logs --tail 120 railshouse-app; exit 1; }
+              sleep 3
+            done
+            curl -sSI http://127.0.0.1:6154/ | head -n 1
             docker image prune -f
             echo "Deployed railshouse $(date)"
