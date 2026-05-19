@@ -47,7 +47,8 @@
             </div>
             <div class="blog-detail-text">
               <h2><%= @article.title %></h2>
-              <p><strong>Published on:</strong> <%= @article.published_at.strftime('%B %d, %Y') %></p>
+              <% article_date = @article.published_at || @article.created_at || Time.current %>
+              <p><strong>Published on:</strong> <%= article_date.strftime('%B %d, %Y') %></p>
               <div class="content">
                 <%= @article.content.html_safe %>
               </div>

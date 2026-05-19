@@ -15,6 +15,7 @@ class Article < ApplicationRecord
     'Native App',
     'News',
     'Rails 3',
+    'Rails Upgrades',
     'ROR',
     'Technical Articles',
     'Uncategorized',
@@ -24,23 +25,49 @@ class Article < ApplicationRecord
   validates :category, inclusion: { in: CATEGORIES, allow_nil: true }
   
   # Scopes for filtering
-  scope :by_category, ->(category) { where(category: category) if category.present? }
-  scope :by_month, ->(year, month) { where('strftime("%Y", published_at) = ? AND strftime("%m", published_at) = ?', year.to_s, month.to_s.rjust(2, '0')) }
-  scope :by_year, ->(year) { where('strftime("%Y", published_at) = ?', year.to_s) }
+  scope :by_category, ->(category) { category.present? ? where(category: category) : all }
+  scope :by_month, lambda { |year, month|
+    y = year.to_i
+    m = month.to_i
+
+    if y.positive? && (1..12).cover?(m)
+      start_date = Time.zone.local(y, m, 1).beginning_of_month
+      where(published_at: start_date..start_date.end_of_month)
+    else
+      none
+    end
+  }
+  scope :by_year, lambda { |year|
+    y = year.to_i
+
+    if y.positive?
+      start_date = Time.zone.local(y, 1, 1).beginning_of_year
+      where(published_at: start_date..start_date.end_of_year)
+    else
+      none
+    end
+  }
   scope :published, -> { where('published_at <= ?', Time.current).order(published_at: :desc) }
   
   # Get unique categories used in articles
   def self.used_categories
-    where.not(category: nil).select(:category).distinct.pluck(:category).sort
+    where.not(category: [nil, '']).distinct.pluck(:category).sort
   end
   
   # Get archive months
   def self.archive_months
-    select("strftime('%Y', published_at) as year, strftime('%m', published_at) as month, strftime('%Y-%m', published_at) as year_month")
-      .where.not(published_at: nil)
-      .group("year_month")
-      .order("year_month DESC")
-      .map { |a| { year: a.year, month: a.month, year_month: a.year_month } }
-      .uniq { |h| h[:year_month] }
+    where.not(published_at: nil)
+      .pluck(:published_at)
+      .map { |published_at| published_at.in_time_zone.beginning_of_month }
+      .uniq
+      .sort
+      .reverse
+      .map do |month_start|
+        {
+          year: month_start.year.to_s,
+          month: format('%02d', month_start.month),
+          year_month: month_start.strftime('%Y-%m')
+        }
+      end
   end
 end

@@ -40,14 +40,15 @@
           <div class="row">
             <% if @articles.any? %>
               <% @articles.each do |article| %>
+                <% article_date = article.published_at || article.created_at || Time.current %>
                 <div class="col-md-6 col-sm-12 col-lg-6 blog-single">
                   <div class="blog-single-inner">
                     <div class="blog-img">
                       <%= image_tag "blog#{rand(1..4)}.png", alt: article.title %>
                     </div>
                     <div class="blog-cont-wrapper">
-                      <div class="date"><%= article.published_at.day %>
-                        <br><span class="month font-uppercase"><%= article.published_at.strftime('%b') %></span>
+                      <div class="date"><%= article_date.day %>
+                        <br><span class="month font-uppercase"><%= article_date.strftime('%b') %></span>
                       </div>
                       <div class="blog-name"><%= link_to article.title, article_path(article) %></div>
                       <% if article.category.present? %>
