@@ -88,22 +88,6 @@
 
         <div class="col-md-12 col-sm-12 col-lg-4">
           <div class="side-bar">
-            <div class="email-form-wrap">
-              <div class="email-form-inner">
-                <div class="email-form-icon">
-                  <%= image_tag "mail-icon.png", alt: "Newsletter subscription" %>
-                </div>
-                <div class="subscrb c-center">Subscribe<br>to Our Newsletter</div>
-                <%= form_with url: '#', method: :post, local: true do |f| %>
-                  <div class="search">
-                    <%= f.label :email, "Enter Your Email ID", class: "sr-only" %>
-                    <%= f.email_field :email, class: "form-control", placeholder: "Enter Your Email ID", required: true, aria: { describedby: "newsletter-help" } %>
-                    <%= f.submit "Submit now", class: "btn search-btn hvr-rectangle-in", aria: { label: "Submit newsletter subscription" } %>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-
             <div class="category">
               <h3>Categories</h3>
               <ul>
