@@ -2,6 +2,8 @@ class Article < ApplicationRecord
   validates :title, presence: true
   validates :content, presence: true
   validates :published_at, presence: true
+  validates :slug, presence: true, uniqueness: true
+  before_validation :generate_slug, if: -> { slug.blank? }
   
   # Categories available for articles
   CATEGORIES = [
@@ -69,5 +71,24 @@ class Article < ApplicationRecord
           year_month: month_start.strftime('%Y-%m')
         }
       end
+  end
+
+  def to_param
+    slug
+  end
+
+  private
+
+  def generate_slug
+    base_slug = title.to_s.parameterize.presence || 'article'
+    candidate_slug = base_slug
+    suffix = 2
+
+    while self.class.where.not(id: id).exists?(slug: candidate_slug)
+      candidate_slug = "#{base_slug}-#{suffix}"
+      suffix += 1
+    end
+
+    self.slug = candidate_slug
   end
 end

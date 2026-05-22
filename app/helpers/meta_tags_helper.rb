@@ -5,8 +5,8 @@ module MetaTagsHelper
       title: 'Ruby on Rails Development & Consulting | Dallas-Fort Worth, Texas',
       reverse: true,
       separator: '|',
-      description: 'RailsHouse is a Fort Worth, Texas based Ruby on Rails consultancy firm providing expert RoR development, migration, staffing, maintenance and support services in Dallas-Fort Worth and across Texas.',
-      keywords: 'Ruby on Rails, RoR, Rails Consulting, Rails Development, Ruby Development, Web Application Development, Rails Migration, Rails Maintenance, Rails Support, Dallas Rails, Fort Worth Rails, Texas Rails Company, DFW Rails Development',
+      description: 'RailsHouse is a Fort Worth, Texas based Ruby on Rails consultancy firm providing expert RoR development, migration, staffing, maintenance and support services with strong search, answer engine, and social sharing readiness.',
+      keywords: 'Ruby on Rails, RoR, Rails Consulting, Rails Development, Ruby Development, Web Application Development, Rails Migration, Rails Maintenance, Rails Support, Dallas Rails, Fort Worth Rails, Texas Rails Company, DFW Rails Development, AEO, AIO, SEO, GEO, SMM',
       canonical: request.original_url,
       og: {
         title: :title,

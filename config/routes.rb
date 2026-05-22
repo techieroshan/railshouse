@@ -24,7 +24,7 @@ Rails.application.routes.draw do
    
    resources :portfolio, only: [:index, :show]
    
-   resources :articles do
+   resources :articles, param: :slug do
      collection do
        get 'category/:category', action: :index, as: :category
        get 'archive/:year/:month', action: :index, as: :archive

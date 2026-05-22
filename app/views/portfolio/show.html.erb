@@ -81,8 +81,8 @@
           <!-- CTA Section -->
           <div class="case-study-cta text-center mt-5 mb-5 p-5" style="background: #f8f9fa; border-radius: 8px;">
             <h3>Ready to Transform Your Business?</h3>
-            <p class="lead">Let RailsHouse build a custom solution tailored to your needs.</p>
-            <%= link_to 'Request a Quote', request_quote_path, class: 'red-btn hvr-radial-in', 
+            <p class="lead">Let RailsHouse build a custom solution designed for your priorities.</p>
+            <%= link_to 'Request a Quote', request_quote_path, class: 'red-btn hvr-radial-in quote-cta-btn',
                 style: 'font-size: 18px; padding: 15px 40px;' %>
           </div>
 
@@ -151,6 +151,14 @@
     color: #333;
     font-weight: 700;
     margin-bottom: 15px;
+  }
+  .quote-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 260px;
+    text-align: center;
+    line-height: 1.1;
   }
 </style>
 

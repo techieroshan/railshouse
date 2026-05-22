@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_action :set_article, only: :show
+
   def index
     @articles = Article.published
     
@@ -36,8 +38,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
-    
     # Set article-specific meta tags
     set_meta_tags(
       title: @article.title,
@@ -68,5 +68,15 @@ class ArticlesController < ApplicationController
                                .where(category: @article.category)
                                .where.not(id: @article.id)
                                .limit(3)
+  end
+
+  private
+
+  def set_article
+    @article = Article.find_by(slug: params[:slug]) || Article.find_by(id: params[:slug])
+    return if @article.blank?
+    return if params[:slug] == @article.slug
+
+    redirect_to article_path(@article), status: :moved_permanently
   end
 end
